@@ -3,6 +3,7 @@
 # datetime:2019/12/27 14:45
 # software: PyCharm
 
+# 在循环中，将数组中的值依次放到字典中，判断target与当前值的差是否在字典中，如在在，说明当前值与字典中的这个值相加等于target
 def twoSum(nums, target):
     num_dict = {}
     for index, num in enumerate(nums):

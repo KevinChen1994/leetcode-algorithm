@@ -10,7 +10,7 @@ class ListNode:
 
 
 class Solution:
-    # 遍历两遍
+    # 单指针，遍历两遍
     def removeNthFromEnd_1(self, head, n):
         p = head
         count = 0
@@ -29,6 +29,23 @@ class Solution:
             else:
                 p = p.next
         return head
+
+    # 双指针，遍历一遍
+    def removeNthformEnd_2(self, head, n):
+        dummy = ListNode(0)
+        dummy.next = head
+        # 设置双指针
+        fast, slow = dummy, dummy
+        # 快指针先移动n个结点
+        for i in range(n):
+            fast = fast.next
+        # 同时移动快指针与慢指针，直到快指针指到最后一个结点
+        while fast.next:
+            slow = slow.next
+            fast = fast.next
+        # 此时慢指针所指结点为要删除的结点的前一个
+        slow.next = slow.next.next
+        return dummy.next
 
 
 if __name__ == '__main__':

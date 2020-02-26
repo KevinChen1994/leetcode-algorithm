@@ -50,4 +50,4 @@ class Solution:
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.removeNthFromEnd([1, 2, 3, 4, 5], 2))
+    print(solution.removeNthFromEnd_1([1, 2, 3, 4, 5], 2))

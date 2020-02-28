@@ -35,41 +35,24 @@ class Solution:
                     tmp = nums[k]
                     nums[k] = nums[i]
                     nums[i] = tmp
-                    self.quick_sort(nums, k + 1, len(nums) - 1)
+                    self.reverse(nums, k + 1, len(nums) - 1)
                     break
         else:
-            self.quick_sort(nums,0, len(nums) - 1)
+            self.reverse(nums, 0, len(nums) - 1)
 
-    def quick_sort(self, li, start, end):
-        # 分治 一分为二
-        # start=end ,证明要处理的数据只有一个
-        # start>end ,证明右边没有数据
-        if start >= end:
-            return
-        # 定义两个游标，分别指向0和末尾位置
-        left = start
-        right = end
-        # 把0位置的数据，认为是中间值
-        mid = li[left]
-        while left < right:
-            # 让右边游标往左移动，目的是找到小于mid的值，放到left游标位置
-            while left < right and li[right] >= mid:
-                right -= 1
-            li[left] = li[right]
-            # 让左边游标往右移动，目的是找到大于mid的值，放到right游标位置
-            while left < right and li[left] < mid:
-                left += 1
-            li[right] = li[left]
-        # while结束后，把mid放到中间位置，left=right
-        li[left] = mid
-        # 递归处理左边的数据
-        self.quick_sort(li, start, left - 1)
-        # 递归处理右边的数据
-        self.quick_sort(li, left + 1, end)
+    def reverse(self, nums, start, end):
+        i = start
+        j = end
+        while i < j:
+            tmp = nums[i]
+            nums[i] = nums[j]
+            nums[j] = tmp
+            i += 1
+            j -= 1
 
 
 if __name__ == '__main__':
     solution = Solution()
-    nums = [1, 2]
+    nums = [1, 5, 8, 4, 7, 6, 5, 3, 1]
     solution.nextPermutation(nums)
     print(nums)

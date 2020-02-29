@@ -18,7 +18,7 @@ class Solution:
         start = 0
         end = len(nums) - 1
         while start <= end:
-            mid = start + (end - start) // 2
+            mid = (start + end) // 2
             if nums[mid] == target:
                 return mid
             # mid 之前的元素是从小到大排序的
@@ -41,5 +41,5 @@ class Solution:
 if __name__ == '__main__':
     solution = Solution()
     nums = [4, 5, 6, 7, 0, 1, 2]
-    target = 2
+    target = 0
     print(solution.search(nums, target))

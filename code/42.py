@@ -4,12 +4,16 @@
 # software: PyCharm
 
 '''
+参考资料 https://leetcode-cn.com/problems/trapping-rain-water/solution/xiang-xi-tong-su-de-si-lu-fen-xi-duo-jie-fa-by-w-8/
 solution1: 按行计算。遍历每一行的元素，当遇到比行数大的数开始计算（flag = True），之后遇到比行数小的数tmp加1，一直到遇到比行数大的数，
 将tmp的值累加到ans中，并将tmp归零。时间复杂度为O(m*n)
 solution2: 按列计算。遍历每一列元素，找到当前列左边最大的元素以及右边最大的元素，根据木桶效应，水的高度最多到两个墙最矮的高度，记这个高度为min_other。
 分为三种情况：1 当前元素大于min_other，那么当前元素上不会有水；2 当前元素小于min_other，那么当前元素上的水的高度为min_other减去当前元素的大小；
 3 当前元素等于min_other，那么当前元素上也不会有水。时间复杂度为O(n²)
 solution3: 动态规划。对solution2的优化，分别遍历一遍所有元素，找到当前要素左边最大与右边最大，然后再遍历一遍要素找到水的体积。时间复杂度O(n)
+solution4: 双指针。 由上述方法可以得出每次都是找到当前元素左右两边最大元素中的较小的那个与当前元素比较，那么可以设置两个指针：左指针与右指针，
+通过判断左指针所指元素左边最大的值与右指针右边最大的值的大小可以得到两个最大的值，通过对比这两个最大的值就可以得到最小的值min_other，用这个值去与对应的
+指针所指的值对比可以得到水量。时间复杂度O(n)
 '''
 
 
@@ -69,15 +73,24 @@ class Solution:
     def trap_4(self, height):
         ans = 0
         max_left = 0
-        max_right = [0] * len(height)
-        for i in range(len(height) - 2, -1, -1):
-            max_right[i] = max(max_right[i + 1], height[i + 1])
-        for i in range(1, len(height)):
-            max_left = max(max_left, height[i - 1])
-            min_other = min(max_left, max_right[i])
-            if height[i] < min_other:
-                ans += min_other - height[i]
+        max_right = 0
+        left = 1
+        right = len(height) - 2
+        for i in range(1, len(height) - 1):
+            if height[left - 1] < height[right + 1]:
+                max_left = max(max_left, height[left - 1])
+                min_other = max_left
+                if min_other > height[left]:
+                    ans += (min_other - height[left])
+                left += 1
+            else:
+                max_right = max(max_right, height[right + 1])
+                min_other = max_right
+                if min_other > height[right]:
+                    ans += (min_other - height[right])
+                right -= 1
         return ans
+
 
 
 if __name__ == '__main__':

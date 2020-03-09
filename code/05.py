@@ -72,8 +72,46 @@ class Solution:
             start = i - (cur - 1) // 2
         return s[start: start + length]
 
+    '''
+    很经典的动态规划解法，使用状态转移矩阵。
+    '''
+    def longestPalindrome_4(self, s):
+        size = len(s)
+        if size < 2:
+            return s
+
+        dp = [[False for _ in range(size)] for _ in range(size)]
+
+        max_len = 1
+        start = 0
+
+        for i in range(size):
+            dp[i][i] = True
+
+        for j in range(1, size):
+            for i in range(0, j):
+                if s[i] == s[j]:
+                    # 表达式 [i + 1, j - 1] 不构成区间，即长度严格小于 2，即 j - 1 - (i + 1) + 1 < 2 ，整理得 j - i < 3。
+                    # 不构成区间就是指i到j之间的元素不超过两个，那么头尾相同，那么整个字符串就是回文串
+                    if j - i < 3:
+                        dp[i][j] = True
+                    else:
+                        # 状态转移，即头尾相同的情况下，里面的子串决定了整个子串是否为回文
+                        dp[i][j] = dp[i + 1][j - 1]
+                else:
+                    dp[i][j] = False
+
+                # 遇到回文(即索引i到j是True)，那么记录开始索引和i到j的长度
+                if dp[i][j]:
+                    cur_len = j - i + 1
+                    if cur_len > max_len:
+                        max_len = cur_len
+                        start = i
+        return s[start:start + max_len]
+
+
 
 if __name__ == '__main__':
     solution = Solution()
     # print(solution.isPalindrome('aba'))
-    print(solution.longestPalindrome_2('abbac'))
+    print(solution.longestPalindrome_4('abbac'))

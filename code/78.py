@@ -6,7 +6,10 @@
 solution1: 回溯法。与迭代法思路相同。
 solution2: 迭代。 每次遍历已有集合与当前遍历的字符相加
 solution3: 使用itertools库
+solution4: 花花酱视频中的方法，DFS+BACKTRACK
 '''
+
+
 class Solution:
     def subsets_1(self, nums):
         ans = []
@@ -17,7 +20,7 @@ class Solution:
     def backtrack(self, nums, temp, ans, i):
         ans.append(temp[:])
         for i in range(i, len(nums)):
-            self.backtrack(nums, temp+[nums[i]], ans, i+1)
+            self.backtrack(nums, temp + [nums[i]], ans, i + 1)
 
     # 迭代
     def subsets_2(self, nums):
@@ -26,7 +29,8 @@ class Solution:
             res = res + [[i] + num for num in res]
         return res
 
-    def subsets_3(self,nums):
+
+    def subsets_3(self, nums):
         import itertools
         res = []
         for i in range(len(nums) + 1):
@@ -35,7 +39,24 @@ class Solution:
         return res
 
 
+    def subsets_4(self, nums):
+        ans = []
+
+        def dfs(n, s, temp):
+            if n == len(temp):
+                ans.append(temp[:])
+                return
+            for i in range(s, len(nums)):
+                temp.append(nums[i])
+                dfs(n, i + 1, temp)
+                temp.pop()
+
+        for i in range(len(nums) + 1):
+            dfs(i, 0, [])
+        return ans
+
+
 if __name__ == '__main__':
     solution = Solution()
     nums = [1, 2, 3]
-    print(solution.subsets_3(nums))
+    print(solution.subsets_1(nums))

@@ -14,6 +14,7 @@ solution3: 动态规划。对solution2的优化，分别遍历一遍所有元素
 solution4: 双指针。 由上述方法可以得出每次都是找到当前元素左右两边最大元素中的较小的那个与当前元素比较，那么可以设置两个指针：左指针与右指针，
 通过判断左指针所指元素左边最大的值与右指针右边最大的值的大小可以得到两个最大的值，通过对比这两个最大的值就可以得到最小的值min_other，用这个值去与对应的
 指针所指的值对比可以得到水量。时间复杂度O(n)
+solution5: 栈。建议debug走一遍，画一画图容易理解。
 '''
 
 
@@ -91,10 +92,30 @@ class Solution:
                 right -= 1
         return ans
 
+    # 栈
+    def trap_5(self, height):
+        sum = 0
+        cur = 0
+        stack = []
+        while cur < len(height):
+            # 遇到比上一个大的值就进行计算面积
+            while len(stack) != 0 and height[cur] > height[stack[-1]]:
+                h = height[stack[-1]]
+                stack.pop()
+                if len(stack) == 0:
+                    break
+                distance = cur - stack[-1] - 1
+                # 在已经弹出的栈顶元素周边找到最小的元素
+                min_ = min(height[stack[-1]], height[cur])
+                # 用最小的元素减去栈顶元素的高度，乘上距离就是雨水的面积
+                sum += distance * (min_ - h)
+            stack.append(cur)
+            cur += 1
+        return sum
 
 
 if __name__ == '__main__':
     solution = Solution()
     height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
     # height = [2, 0, 2]
-    print(solution.trap_4(height))
+    print(solution.trap_5(height))

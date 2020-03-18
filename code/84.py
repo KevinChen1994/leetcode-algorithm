@@ -2,6 +2,13 @@
 # author:chenmeng
 # datetime:2020/3/17 17:47
 # software: PyCharm
+'''
+solution1: 暴力法，两次for循环，每次找出区间内最小的值，乘上区间长度。
+solution2: 分治算法。通过观察可以得出：确定了最矮柱子以后，矩形的宽尽可能往两边延伸。在最矮柱子左边的最大面积矩形（子问题）。
+在最矮柱子右边的最大面积矩形（子问题）。每次记录最大的值进行比较。
+solution3: 使用栈。
+'''
+
 
 class Solution:
     # 暴力法
@@ -36,15 +43,20 @@ class Solution:
         max_area = 0
         heights = [0] + heights + [0]
         for i in range(len(heights)):
+            # 如果栈顶元素所代表的值大于当前的值，那么进行计算面积。
             while stack and heights[stack[-1]] > heights[i]:
+                # 取出栈顶元素
                 tmp = stack.pop()
-                max_area = max(max_area, heights[tmp] * (i-stack[-1]-1))
+                # 面积计算方法： 栈顶元素的所代表的值*（当前的索引-栈顶元素弹出之后的栈顶元素-1）
+                # 原因：因为栈内的元素都是遇到比自己大的值才入栈，否则就进行计算面积了，所以栈内元素所代表的值都是从小到大排列的
+                # 那么栈顶元素即为最大的那个值，他的面积也就是当前索引减去栈顶后边那个索引在减去1，建议结合实例走一遍流程就理解了。
+                max_area = max(max_area, heights[tmp] * (i - stack[-1] - 1))
             stack.append(i)
         return max_area
-
 
 if __name__ == '__main__':
     solution = Solution()
     height = [2, 1, 5, 6, 2, 3]
     # height = [6, 4, 5, 2, 4, 3, 9]
+    # height = [2, 2, 1, 2, 2]
     print(solution.largestRectangleArea_3(height))

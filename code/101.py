@@ -27,6 +27,7 @@ class Solution:
             return False
         return tree1.val == tree2.val and self.helper(tree1.left, tree2.right) and self.helper(tree1.right, tree2.left)
 
+    # 迭代
     def isSymmetric_2(self, root):
         queue = [root, root]
         while len(queue) != 0:

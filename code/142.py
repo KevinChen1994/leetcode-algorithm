@@ -1,6 +1,7 @@
 # !usr/bin/env python
 # -*- coding:utf-8 _*-
-# datatime:2020/4/6 20:58
+# author:chenmeng
+# datetime:2020/4/6 20:58
 '''
 solution1: 暴力法。
 solution2: 数学公式计算。详见https://leetcode-cn.com/problems/linked-list-cycle-ii/solution/linked-list-cycle-ii-kuai-man-zhi-zhen-shuang-zhi-/

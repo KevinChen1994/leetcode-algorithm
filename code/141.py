@@ -1,6 +1,7 @@
 # !usr/bin/env python
 # -*- coding:utf-8 _*-
-# datatime:2020/4/5 23:46
+# author:chenmeng
+# datetime:2020/4/5 23:46
 '''
 solution1: 暴力法。设定一个visited的列表，每次访问节点之前都去查看visited中是否存在当前节点，如果存在说明存在环，
 如果不存在就将节点存放到visited中。时间复杂度O(n)，空间复杂度O(n)

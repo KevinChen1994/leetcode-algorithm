@@ -41,7 +41,9 @@ class Solution:
     def canFinish_2(self, numCourses, prerequisites):
 
         def dfs(i, adjacency, flags):
+            # 如果是-1，说明已经被其他节点启动的DFS访问过了，直接返回True
             if flags[i] == -1: return True
+            # 如果是1，说明在本轮DFS中第二次被访问，说明有环存在，返回False
             if flags[i] == 1: return False
             flags[i] = 1
             for j in adjacency[i]:
@@ -53,7 +55,7 @@ class Solution:
         # 0 未被访问； -1 已被其他节点访问； 1 被当前节点访问
         flags = [0 for _ in range(numCourses)]
         for cur, pre in prerequisites:
-            adjacency[cur].append(pre)
+            adjacency[pre].append(cur)
         for i in range(numCourses):
             if not dfs(i, adjacency, flags): return False
         return True
@@ -61,7 +63,7 @@ class Solution:
 
 if __name__ == '__main__':
     solution = Solution()
-    numCourses = 5
+    numCourses = 2
     prerequisites = [[1, 0], [0, 1]]
     # prerequisites = [[1, 0], [2, 1], [3, 1], [4, 2]]
     print(solution.canFinish_2(numCourses, prerequisites))

@@ -4,9 +4,10 @@
 # datetime:2020/4/19 21:00
 '''
 solution1: 排序好，返回第k-1个元素
-solution2: 动态创建一个大顶堆，并保持堆的大小小于等于k，这样，堆就保留了前k个最大的元素，堆定元素就是答案
+solution2: 动态创建一个大顶堆，并保持堆的大小小于等于k，这样，堆就保留了前k个最大的元素，堆底元素就是答案
 solution3: 思路类似于快排，题目想要找的是第k个大的数，那么快排的过程是选中一个分界元素，将比他小的元素移动到分界元素的左边，比他大的元素移动到分界元素右边，
 那么一趟下来分界元素的位置就确定了。现在需要做的就是对比分界元素的位置与题目要求的k的大小，第K的元素，也就是第(n-k)小的元素，分界元素的索引与n-k相同的话，这就是答案。
+solution4: 自定义堆。大顶堆：每个节点的值都不大于其父节点的值；小顶堆：每个节点的值都不小于其父节点的值。
 '''
 
 import heapq
@@ -52,11 +53,29 @@ class Solution:
 
         return select(0, len(nums) - 1, len(nums) - k)
 
+    def findKthLargest_4(self, nums, k):
+        size = len(nums)
+        if k > size:
+            raise Exception('程序出错')
+
+        L = []
+        for index in range(k):
+            # heapq 默认就是小顶堆
+            heapq.heappush(L, nums[index])
+
+        for index in range(k, size):
+            top = L[0]
+            if nums[index] > top:
+                # 看一看堆顶的元素，只要比堆顶元素大，就替换堆顶元素
+                heapq.heapreplace(L, nums[index])
+        # 最后堆顶中的元素就是堆中最小的，整个数组中的第 k 大元素
+        return L[0]
+
 
 if __name__ == '__main__':
     solution = Solution()
     nums = [3, 2, 3, 1, 2, 4, 5, 5, 6]
-    nums = [3, 2, 1, 5, 6, 4]
+    # nums = [3, 2, 1, 5, 6, 4]
     k = 4
-    k = 2
-    print(solution.findKthLargest_3(nums, k))
+    # k = 2
+    print(solution.findKthLargest_4(nums, k))

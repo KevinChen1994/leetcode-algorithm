@@ -26,7 +26,7 @@ class Solution:
         # dp[i][j]为前i个数中是否有能够凑成和为j的数
         dp = [[False for _ in range(target + 1)] for _ in range(n)]
         # 先填表格第 0 行，第 1 个数只能让容积为它自己的背包恰好装满（没看懂啥意思，去掉也能AC）
-        if nums[0] <= target:
+        if nums[0] == target:
             dp[0][nums[0]] = True
         for i in range(1, n):
             for j in range(target + 1):
@@ -52,7 +52,7 @@ class Solution:
             return False
         target = sum // 2
         dp = [[False for _ in range(target + 1)] for _ in range(n)]
-        if nums[0] <= target:
+        if nums[0] == target:
             dp[0][nums[0]] = True
         for i in range(1, n):
             for j in range(target + 1):
@@ -93,5 +93,6 @@ class Solution:
 if __name__ == '__main__':
     solution = Solution()
     nums = [1, 5, 11, 5]
-    # nums = [1, 2, 5]
+    nums = [1, 2, 5]
+    nums = [15, 5, 5, 5]
     print(solution.canPartition_3(nums))

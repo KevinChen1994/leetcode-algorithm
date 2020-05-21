@@ -76,6 +76,9 @@ class Solution:
             return False
         target = sum // 2
         dp = [False for _ in range(target + 1)]
+        # 第一个数小于等于target时，状态矩阵对应的位置设置为true
+        # https://leetcode-cn.com/problems/partition-equal-subset-sum/solution/0-1-bei-bao-wen-ti-xiang-jie-zhen-dui-ben-ti-de-yo/406696/
+        # 记录了当时的讨论
         if nums[0] <= target:
             dp[nums[0]] = True
         for i in range(1, n):

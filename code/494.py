@@ -54,12 +54,17 @@ class Solution:
         target = S + sum(nums)
         if sum(nums) < S or target < 0 or target % 2: return 0
         target //= 2
+        # 和为索引的个数
         dp = [0] * (target + 1)
         dp[0] = 1
         for num in nums:
+            # 逆序遍历，这样就可以把转移矩阵压缩到一维，因为就不用使用上一行的状态，而是从后往前进行遍历，只用到当前的值和前边一个的值
+            # 从target开始遍历，一直遍历到num
             for i in range(target, num - 1, -1):
-                if i - num >= 0:
-                    dp[i] += dp[i - num]
+                # 保证当前遍历的到num是小于当前的和的，也为了防止数组越界(这里不太西药)
+                # if i - num >= 0:
+                #     dp[i] += dp[i - num]
+                dp[i] += dp[i - num]
         return dp[-1]
 
 

@@ -55,7 +55,7 @@ class Solution:
 if __name__ == '__main__':
     solution = Solution()
     # s = "leetcode"
-    # wordDict = ["leet", "code"]
+    # wordDict = ["leet", "top100"]
     s = "catsandog"
     wordDict = ["cats", "dog", "sand", "and", "cat"]
     print(solution.wordBreak_3(s, wordDict))

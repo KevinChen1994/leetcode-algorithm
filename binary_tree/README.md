@@ -286,11 +286,8 @@ class Solution:
 
 ```python
 '''
-solution1: 高度平衡二叉树需要满足：左子树是高度平衡二叉树；右子树是高度平衡二叉树；左右子树深度差值不能大于1.
-isBalanced()会遍历整个二叉树，时间复杂度是O(N),depth()需要遍历各子树的所有结点，时间复杂度是O(logN),
-所以最终时间复杂度是O(NlogN)
-solution2: 使用一个全局变量记录状态，如果有一棵子树不是高度平衡二叉树，那么整个数也就不是。需要遍历整个子树，
-时间复杂度为O(N)
+solution1: 高度平衡二叉树需要满足：左子树是高度平衡二叉树；右子树是高度平衡二叉树；左右子树深度差值不能大于1.isBalanced()会遍历整个二叉树，时间复杂度是O(N),depth()需要遍历各子树的所有结点，时间复杂度是O(logN),所以最终时间复杂度是O(NlogN)
+solution2: 使用一个全局变量记录状态，如果有一棵子树不是高度平衡二叉树，那么整个数也就不是。需要遍历整个子树，时间复杂度为O(N)
 '''
 # Definition for a binary tree node.
 class TreeNode:
@@ -326,7 +323,68 @@ class Solution:
         return max(left, right) + 1
 ```
 
+### binary-tree-maximum-path-sum
+
+[binary-tree-maximum-path-sum](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)
+
+> 给定一个**非空**二叉树，返回其最大路径和。
+
+```python
+'''
+solution: 分治思想，递归计算出左右节点分别的贡献值，只有当贡献值大于0时才使用这条路径。结点的贡献值取决于当前结点的值和他的左右节点的贡献值，每次递归返回该节点的最大贡献值。时间复杂度O(N)，对每个节点只访问一次。
+'''
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
 
 
+class Solution:
+    def maxPathSum(self, root: TreeNode) -> int:
+        self.max_result = float('-inf')
+        self.maxContribution(root)
+        return self.max_result
 
+    # 返回结点的最大贡献值，并且在遍历过程中记录最大的路径和
+    def maxContribution(self, root):
+        if not root:
+            return 0
+        # 只保留左右节点大于0的贡献值。
+        left = max(self.maxContribution(root.left), 0)
+        right = max(self.maxContribution(root.right), 0)
+        # 节点路径和取决于当前节点和他左右节点的最大贡献值
+        self.max_result = max(self.max_result, root.val + left + right)
+        # 返回该节点的贡献值
+        return root.val + max(left, right)
+```
+
+### lowest-common-ancestor-of-a-binary-tree
+
+[lowest-common-ancestor-of-a-binary-tree](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+
+> 给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。**一个节点也可以是它自己的祖先**
+
+```python
+'''
+solution: 如果公共祖先在左子树就返回左子树，如果公共祖先在右子树就返回右子树，否则返回根节点。时间复杂度O(N)。
+'''
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+class Solution:
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        if not root or root == p or root == q:
+            return root
+        left = self.lowestCommonAncestor(root.left, p, q)
+        right = self.lowestCommonAncestor(root.right, p, q)
+        if left and right:
+            return root
+        return left if left else right
+```
 

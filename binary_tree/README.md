@@ -388,3 +388,99 @@ class Solution:
         return left if left else right
 ```
 
+## BFS应用
+
+### binary-tree-level-order-traversal
+
+[binary-tree-level-order-traversal](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
+
+> 给你一个二叉树，请你返回其按 **层序遍历** 得到的节点值。 （即逐层地，从左到右访问所有节点）。
+
+```python
+'''
+solution: 使用队列记录每一层的节点，遍历当前队列的大小次，每次遍历当前队列中的节点。一个数进去一次出来一次，时间复杂度O(logN)
+'''
+class Solution:
+    def levelOrder(self, root: TreeNode):
+        result = []
+        if not root:
+            return result
+        queue = [root]
+        while queue:
+            tmp_list = []
+            size = len(queue)
+            for i in range(size):
+                node = queue.pop(0)
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+                tmp_list.append(node.val)
+            result.append(tmp_list)
+        return result
+```
+
+### binary-tree-level-order-traversal-ii
+
+[binary-tree-level-order-traversal-ii](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/)
+
+> 给定一个二叉树，返回其节点值自底向上的层次遍历。 （即按从叶子节点所在层到根节点所在的层，逐层从左向右遍历）
+
+```python
+'''
+solution: 跟正序层次遍历二叉树一样的流程，不过在插入result的时候每次都插到最左边。另外还可以直接按照正序层次遍历二叉树，最后结果result[::-1]，直接翻转结果，这是Python的特性，不过这样很慢，这个操作时间复杂度有点高。
+'''
+    def levelOrserBotton(self, root):
+        result = []
+        if not root:
+            return result
+        queue = [root]
+        while queue:
+            size = len(queue)
+            tmp = []
+            for i in range(size):
+                node = queue.pop(0)
+                tmp.append(node.val)
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+            result.insert(0, tmp)
+        return result
+```
+
+### binary-tree-zigzag-level-order-traversal
+
+[binary-tree-zigzag-level-order-traversal](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/)
+
+```python
+'''
+solution: 设置一个flag，是True的时候就将结果从左到右输出到数组中，False的话就从右到左输出到数组中。
+'''
+class Solution:
+    def zigzagLevelOrder(self, root: TreeNode):
+        result = []
+        if not root:
+            return result
+        queue = [root]
+        flag = True
+        while queue:
+            tmp = []
+            size = len(queue)
+            for i in range(size):
+                node = queue.pop(0)
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+                if flag:
+                    tmp.append(node.val)
+                else:
+                    tmp.insert(0, node.val)
+            flag = False if flag else True
+            result.append(tmp)
+        return result
+```
+
+## 二叉搜索树应用
+

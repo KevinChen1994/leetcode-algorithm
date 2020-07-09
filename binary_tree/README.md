@@ -484,3 +484,116 @@ class Solution:
 
 ## 二叉搜索树应用
 
+### validate-binary-search-tree
+
+[validate-binary-search-tree](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+
+> 给定一个二叉树，判断其是否是一个有效的二叉搜索树。
+>
+> 假设一个二叉搜索树具有如下特征：
+>
+> 节点的左子树只包含小于当前节点的数。
+> 节点的右子树只包含大于当前节点的数。
+> 所有左子树和右子树自身必须也是二叉搜索树。
+>
+
+```python
+'''
+solution1: 递归调用validBST函数，如果是左子树，那么high就是根节点；如果是右子树，那么low就是根节点。
+solution2: 利用中序遍历。BST的特性就是中序遍历的结果是有小到大的数。
+'''
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+
+class Solution:
+    def isValidBST_1(self, root: TreeNode) -> bool:
+        return self.validBST(root)
+
+    def validBST(self, root, low=float('-inf'), high=float('inf')):
+        if not root:
+            return True
+        val = root.val
+        if val <= low or val >= high:
+            return False
+        if not self.validBST(root.left, low, val):
+            return False
+        if not self.validBST(root.right, val, high):
+            return False
+        return True
+
+    def isValidBST_2(self, root):
+        if not root:
+            return True
+        stack = []
+        tmp = float('-inf')
+        while root or stack:
+            if root:
+                stack.append(root)
+                root = root.left
+            else:
+                root = stack.pop()
+                val = root.val
+                root = root.right
+                if val > tmp:
+                    tmp = val
+                else:
+                    return False
+        return True
+```
+
+### insert-into-a-binary-search-tree
+
+[insert-into-a-binary-search-tree](https://leetcode-cn.com/problems/insert-into-a-binary-search-tree/)
+
+> 给定二叉搜索树（BST）的根节点和要插入树中的值，将值插入二叉搜索树。 返回插入后二叉搜索树的根节点。 保证原始二叉搜索树中不存在新值。
+
+> 注意，可能存在多种有效的插入方式，只要树在插入后仍保持为二叉搜索树即可。 你可以返回任意有效的结果。
+
+```python
+'''
+solution1: 递归
+solution2: 迭代
+'''
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+class Solution:
+    def insertIntoBST_1(self, root: TreeNode, val: int) -> TreeNode:
+        if not root:
+            return TreeNode(val)
+        if root.val > val:
+            root.left = self.insertIntoBST(root.left, val)
+        else:
+            root.right = self.insertIntoBST(root.right, val)
+        return root
+
+    def insertIntoBST_2(self, root, val):
+        node = root
+        while node:
+            if node.val > val:
+                if not node.left:
+                    node.left = TreeNode(val)
+                    return root
+                else:
+                    node = node.left
+            else:
+                if not node.right:
+                    node.right = TreeNode(val)
+                    return root
+                else:
+                    node = node.right
+        # 防止输入的树是空树
+        return TreeNode(val)
+
+```
+

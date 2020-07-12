@@ -3,7 +3,8 @@
 # author:chenmeng
 # datetime:2020/7/9 23:28
 '''
-solution: 先将head的下一个节点存储起来，然后进行翻转，将翻转好的连接链接到new_head后，之后head指针右移进行翻转下一个。
+solution1: 先将head的下一个节点存储起来，然后进行翻转，将翻转好的连接链接到new_head后，之后head指针右移进行翻转下一个。
+solution2: 递归
 '''
 
 
@@ -29,3 +30,13 @@ class Solution:
             # 指针右移
             head = next
         return new_head.next
+
+    def reverseList(self, head):
+        if not head or not head.next:
+            return head
+        # reverse返回的是已经反转好的链表，使用last进行接收
+        last = self.reverseList(head.next)
+        # 将head节点进行翻转
+        head.next.next = head
+        head.next = None
+        return last

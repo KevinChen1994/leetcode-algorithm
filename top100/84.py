@@ -59,4 +59,4 @@ if __name__ == '__main__':
     height = [2, 1, 5, 6, 2, 3]
     # height = [6, 4, 5, 2, 4, 3, 9]
     # height = [2, 2, 1, 2, 2]
-    print(solution.largestRectangleArea_3(height))
+    print(solution.largestRectangleArea_2(height))

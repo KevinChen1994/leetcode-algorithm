@@ -536,3 +536,54 @@ class Solution:
 
 [copy-list-with-random-pointer](https://leetcode-cn.com/problems/copy-list-with-random-pointer/)
 
+> 给定一个链表，每个节点包含一个额外增加的随机指针，该指针可以指向链表中的任何节点或空节点。
+>
+> 要求返回这个链表的 深拷贝。 
+>
+> 我们用一个由 n 个节点组成的链表来表示输入/输出中的链表。每个节点用一个 [val, random_index] 表示：
+>
+> - val：一个表示 Node.val 的整数。
+> - random_index：随机指针指向的节点索引（范围从 0 到 n-1）；如果不指向任何节点，则为  null 。
+>
+> 注：深度拷贝：构造生成一个完全新的链表，即使将原链表毁坏，新链表可独立使用
+
+```python
+'''
+solution: 在原链表的每个结点旁边增加一个拷贝节点，将拷贝的结点正确赋值后连接成一个新的链表。
+'''
+# Definition for a Node.
+class Node:
+    def __init__(self, x: int, next: 'Node' = None, random: 'Node' = None):
+        self.val = int(x)
+        self.next = next
+        self.random = random
+
+
+class Solution:
+    def copyRandomList(self, head: 'Node') -> 'Node':
+        if not head:
+            return head
+        ptr = head
+        # 在原链表的没个节点旁边增加一个节点
+        while ptr:
+            new_code = Node(ptr.val, None, None)
+            new_code.next = ptr.next
+            ptr.next = new_code
+            ptr = new_code.next
+        ptr = head
+        # 将复制链表的random指向对应的位置
+        while ptr:
+            ptr.next.random = ptr.random.next if ptr.random else None
+            ptr = ptr.next.next
+        # 将赋值链表的next指向对应的位置
+        ptr_old_list = head
+        ptr_new_list = head.next
+        head_old = head.next
+        while ptr_old_list:
+            ptr_old_list.next = ptr_old_list.next.next
+            ptr_new_list.next = ptr_new_list.next.next if ptr_new_list.next else None
+            ptr_old_list = ptr_old_list.next
+            ptr_new_list = ptr_new_list.next
+        return head_old
+```
+

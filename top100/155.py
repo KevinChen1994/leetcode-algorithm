@@ -71,7 +71,7 @@ class MinStack_2:
 
 if __name__ == '__main__':
     # Your MinStack object will be instantiated and called as such:
-    obj = MinStack()
+    obj = MinStack_1()
     # obj.push(2)
     # obj.push(1)
     # obj.push(0)

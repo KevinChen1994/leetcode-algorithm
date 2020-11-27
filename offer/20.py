@@ -20,7 +20,7 @@ class Solution:
         num_seen = False
         dot_seen = False
         e_seen = False
-        # 去除收尾的空格。
+        # 去除首尾的空格。
         s = s.strip()
         for i in range(len(s)):
             if '0' <= s[i] <= '9':

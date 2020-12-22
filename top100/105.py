@@ -19,7 +19,10 @@ class Solution:
             return None
         root = TreeNode(preorder[0])
         mid = inorder.index(preorder[0])
+        # preorder[1: index + 1]的意思是先序遍历第一个值为根节点，所以左子树从第二个值开始，
+        # 具体的长度为在中序遍历中索引的大小
         root.left = self.buildTree_1(preorder[1:mid + 1], inorder[0:mid])
+        # preorder[index + 1:]这个也就是说除去根节点和左子树，剩下的都是右子树了
         root.right = self.buildTree_1(preorder[mid + 1:], inorder[mid + 1:])
         return root
 
@@ -45,4 +48,4 @@ if __name__ == '__main__':
     solution = Solution()
     preorder = [3, 9, 20, 15, 7]
     inorder = [9, 3, 15, 20, 7]
-    print(solution.buildTree_2(preorder, inorder))
+    print(solution.buildTree_1(preorder, inorder))

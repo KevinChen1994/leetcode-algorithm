@@ -312,19 +312,18 @@ class Solution:
             mid = (left + right) // 2
             if nums[mid] == target:
                 return True
-            # 如果遇到重复的情况，那么就一直遍历到不重复为止，此时就跟33题一样了
-            if nums[left] == nums[mid]:
-                left += 1
-                continue
-            if nums[left] <= nums[mid]:
-                if nums[mid] > target and target >= nums[left]:
+            elif nums[mid] > nums[right]:
+                if nums[left] <= target < nums[mid]:
                     right = mid - 1
                 else:
                     left = mid + 1
+            elif nums[mid] < nums[right]:
+                if nums[mid] < target <= nums[right]:
+                    left = mid + 1
+                else:
+                    right = mid - 1
+            # 如果nums[mid] == nums[right]，那么说明有重复的数字，此时要逐渐减小nums的范围，与154类似的操作，右边界递减。
             else:
-                if nums[mid] < target and target <= nums[right]:
-                    left = mid + 1
-                else:
-                    right = mid - 1
+                right -= 1
         return False
 ```

@@ -89,6 +89,7 @@ class Solution:
 ```
 
 ### reverse-linked-list
+[reverse-linked-list](https://leetcode-cn.com/problems/reverse-linked-list/)
 
 > 反转一个单链表。
 
@@ -160,6 +161,17 @@ class Solution:
         # 将反转好的结点拼接到后边未反转的结点上
         head.next = successor
         return new_head
+
+    def reverseFirstN(self, head: ListNode, n):
+        dummy = ListNode(-1)
+        dummy.next = head
+        pre = dummy
+        for i in range(1, n):
+            tmp = head.next
+            head.next = tmp.next
+            tmp.next = pre.next
+            pre.next = tmp
+        return dummy.next
 ```
 
 ### reverse-linked-list-ii

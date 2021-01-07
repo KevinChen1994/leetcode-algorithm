@@ -12,8 +12,8 @@
 | 1137 | [N-th Tribonacci Number](https://leetcode-cn.com/problems/n-th-tribonacci-number/) | Easy       |                                  |                                                              |
 | 303  | [Range Sum Query Immutable](https://leetcode-cn.com/problems/range-sum-query-immutable/) |            | 1218                             |                                                              |
 | 1218 | [Longest Arithmetic Subsequence Of Given Difference](https://leetcode-cn.com/problems/longest-arithmetic-subsequence-of-given-difference/) |            |                                  |                                                              |
-|      |                                                              |            |                                  |                                                              |
-|      |                                                              |            |                                  |                                                              |
+| 53   | [Maximum Subarray](https://leetcode-cn.com/problems/maximum-subarray/) | Easy       | 121                              |                                                              |
+| 121  | [Best Time To Buy And Sell Stock](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) | Easy       |                                  |                                                              |
 |      |                                                              |            |                                  |                                                              |
 |      |                                                              |            |                                  |                                                              |
 | 72   | [Edit Distance](https://leetcode-cn.com/problems/edit-distance/) | Hard       | 1458、10、44、97、115、712、1187 | 这种都需要分各种情况，一定要分清楚再去写状态转移方程。       |
@@ -28,4 +28,12 @@
 | 1092 | [Shortest Common Supersequence](https://leetcode-cn.com/problems/shortest-common-supersequence/) | Hard       |                                  |                                                              |
 | 718  | [Maximum Length Of Repeated Subarray](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/) | Medium     |                                  |                                                              |
 |      |                                                              |            |                                  |                                                              |
+
+##list
+
+| ID   | name                                                         | Difficulty | Similar Problems | Comments |
+| ---- | ------------------------------------------------------------ | ---------- | ---------------- | -------- |
+| 24   | [Swap Nodes In Pairs](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) | Medium     | 25               |          |
+| 25   | [Reverse Nodes In K Group](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) | Hard       |                  |          |
+|      |                                                              |            |                  |          |
 

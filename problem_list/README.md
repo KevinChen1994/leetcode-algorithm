@@ -29,11 +29,33 @@
 | 718  | [Maximum Length Of Repeated Subarray](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/) | Medium     |                                  |                                                              |
 |      |                                                              |            |                                  |                                                              |
 
-##list
+##LinkedList
 
 | ID   | name                                                         | Difficulty | Similar Problems | Comments |
 | ---- | ------------------------------------------------------------ | ---------- | ---------------- | -------- |
-| 24   | [Swap Nodes In Pairs](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) | Medium     | 25               |          |
+| 24   | [Swap Nodes In Pairs](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) | Medium     | 25、206          |          |
 | 25   | [Reverse Nodes In K Group](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) | Hard       |                  |          |
+| 206  | [Reverse Linked List](https://leetcode-cn.com/problems/reverse-linked-list/) | Easy       |                  |          |
+| 2    | [Add Two Numbers](https://leetcode-cn.com/problems/add-two-numbers/) | Medium     | 445              |          |
+| 445  | [Add Two Numbers II](https://leetcode-cn.com/problems/add-two-numbers-ii/) | Medium     |                  |          |
 |      |                                                              |            |                  |          |
+|      |                                                              |            |                  |          |
+|      |                                                              |            |                  |          |
+|      |                                                              |            |                  |          |
+
+## HashTable
+
+| ID   | name                                                         | Difficulty | Similar Problems | Comments |
+| ---- | ------------------------------------------------------------ | ---------- | ---------------- | -------- |
+| 1    | [Two Sum](https://leetcode-cn.com/problems/two-sum/)         | Easy       | 560              |          |
+| 560  | [Subarray Sum Equals K](https://leetcode-cn.com/problems/subarray-sum-equals-k/) |            |                  |          |
+|      |                                                              |            |                  |          |
+
+## TwoPointers
+
+| ID   | name                                                         | Difficulty | Similar Problems | Comments |
+| ---- | ------------------------------------------------------------ | ---------- | ---------------- | -------- |
+| 15   | [3Sum](https://leetcode-cn.com/problems/3sum/)               | Medium     | 16、167          |          |
+| 16   | [3Sum Closest](https://leetcode-cn.com/problems/3sum-closest/) | Medium     |                  |          |
+| 167  | [Two Sum II Input Array Is Sorted](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | Easy       |                  |          |
 

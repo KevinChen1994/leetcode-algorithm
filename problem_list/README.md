@@ -59,3 +59,30 @@
 | 16   | [3Sum Closest](https://leetcode-cn.com/problems/3sum-closest/) | Medium     |                  |          |
 | 167  | [Two Sum II Input Array Is Sorted](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | Easy       |                  |          |
 
+### Tree
+
+| ID   | name                                                         | Difficulty | Similar Problems | Comments                     |
+| ---- | ------------------------------------------------------------ | ---------- | ---------------- | ---------------------------- |
+| 94   | [Binary Tree Inorder Traversal](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) | Medium     | 144、145         | 使用递归和辅助栈两种方法实现 |
+| 144  | [Binary Tree Preorder Traversal](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/) | Medium     |                  |                              |
+| 145  | [Binary Tree Postorder Traversal](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/) | Medium     |                  |                              |
+| 102  | [Binary Tree Level Order Traversal](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) | Medium     | 107、103         |                              |
+| 107  | [Binary Tree Level Order Traversal II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/) | Easy       |                  |                              |
+| 103  | [Binary Tree Zigzag Level Order Traversal](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/) | Medium     |                  |                              |
+
+### Graph
+
+| ID   | name                                                         | Difficulty | Similar Problems         | Comments                                             |
+| ---- | ------------------------------------------------------------ | ---------- | ------------------------ | ---------------------------------------------------- |
+| 133  | [Clone Graph](https://leetcode-cn.com/problems/clone-graph/) | Medium     | 138                      | DFS                                                  |
+| 138  | [Copy List With Random Pointer](https://leetcode-cn.com/problems/copy-list-with-random-pointer/) | Medium     |                          |                                                      |
+| 200  | [Number Of Islands](https://leetcode-cn.com/problems/number-of-islands/) | Medium     | 547、695、733、827、1162 | DFS                                                  |
+| 547  | [Number Of Provinces](https://leetcode-cn.com/problems/number-of-provinces/) | Medium     |                          | 在美国站中这道题叫朋友圈，只是改了个名字，思路一样。 |
+| 695  | [Max Area Of Island](https://leetcode-cn.com/problems/max-area-of-island/) | Medium     |                          |                                                      |
+| 733  | [Flood Fill](https://leetcode-cn.com/problems/flood-fill/)   | Easy       |                          |                                                      |
+| 827  | [Making A Large Island](https://leetcode-cn.com/problems/making-a-large-island/) | Hard       |                          | 这道题是一道变型题，挺有意思的。                     |
+| 1162 | [As Far From Land As Possible](https://leetcode-cn.com/problems/as-far-from-land-as-possible/) | Medium     |                          | BFS                                                  |
+|      |                                                              |            |                          |                                                      |
+|      |                                                              |            |                          |                                                      |
+|      |                                                              |            |                          |                                                      |
+

@@ -31,19 +31,19 @@
 
 ## LinkedList
 
-| ID   | name                                                         | Difficulty | Similar Problems | Comments |
-| ---- | ------------------------------------------------------------ | ---------- | ---------------- | -------- |
-| 2    | [Add Two Numbers](https://leetcode-cn.com/problems/add-two-numbers/) | Medium     | 445              |          |
-| 445  | [Add Two Numbers II](https://leetcode-cn.com/problems/add-two-numbers-ii/) | Medium     |                  |          |
-| 24   | [Swap Nodes In Pairs](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) | Medium     | 25、206          |          |
-| 25   | [Reverse Nodes In K Group](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) | Hard       |                  |          |
-| 206  | [Reverse Linked List](https://leetcode-cn.com/problems/reverse-linked-list/) | Easy       |                  |          |
-| 141  | [Linked List Cycle](https://leetcode-cn.com/problems/linked-list-cycle/) | Easy       | 142              |          |
-| 142  | [Linked List Cycle II](https://leetcode-cn.com/problems/linked-list-cycle-ii/) | Medium     |                  |          |
-| 21   | [Merge Two Sorted Lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/) | Easy       | 23               |          |
-| 23   | [Merge K Sorted Lists](https://leetcode-cn.com/problems/merge-k-sorted-lists/) | Hard       |                  | 归并     |
-|      |                                                              |            |                  |          |
-|      |                                                              |            |                  |          |
+| ID   | name                                                         | Difficulty | Similar Problems | Comments                                                     |
+| ---- | ------------------------------------------------------------ | ---------- | ---------------- | ------------------------------------------------------------ |
+| 2    | [Add Two Numbers](https://leetcode-cn.com/problems/add-two-numbers/) | Medium     | 445              |                                                              |
+| 445  | [Add Two Numbers II](https://leetcode-cn.com/problems/add-two-numbers-ii/) | Medium     |                  |                                                              |
+| 24   | [Swap Nodes In Pairs](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) | Medium     | 25、206          |                                                              |
+| 25   | [Reverse Nodes In K Group](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) | Hard       |                  |                                                              |
+| 206  | [Reverse Linked List](https://leetcode-cn.com/problems/reverse-linked-list/) | Easy       |                  |                                                              |
+| 141  | [Linked List Cycle](https://leetcode-cn.com/problems/linked-list-cycle/) | Easy       | 142              |                                                              |
+| 142  | [Linked List Cycle II](https://leetcode-cn.com/problems/linked-list-cycle-ii/) | Medium     |                  |                                                              |
+| 21   | [Merge Two Sorted Lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/) | Easy       | 23               |                                                              |
+| 23   | [Merge K Sorted Lists](https://leetcode-cn.com/problems/merge-k-sorted-lists/) | Hard       |                  | 归并                                                         |
+| 160  | [Intersection Of Two Linked Lists](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/) | Easy       |                  | 相同路程，两个人速度相同，即使起点不同，最终也是同时到终点。 |
+|      |                                                              |            |                  |                                                              |
 
 ## HashTable
 
@@ -71,6 +71,9 @@
 | 102  | [Binary Tree Level Order Traversal](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) | Medium     | 107、103         |                              |
 | 107  | [Binary Tree Level Order Traversal II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/) | Easy       |                  |                              |
 | 103  | [Binary Tree Zigzag Level Order Traversal](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/) | Medium     |                  |                              |
+| 236  | [Lowest Common Ancestor Of A Binary Tree](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) | Medium     | 235              |                              |
+| 235  | [Lowest Common Ancestor Of A Binary Search Tree](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Easy       |                  |                              |
+| 199  | [Binary Tree Right Side View](https://leetcode-cn.com/problems/binary-tree-right-side-view/) | Medium     |                  | 层次遍历                     |
 
 ## Graph
 
@@ -93,6 +96,14 @@
 | ID   | name                                                         | Difficulty | Similar Problems | Comments |
 | ---- | ------------------------------------------------------------ | ---------- | ---------------- | -------- |
 | 215  | [Kth Largest Element In An Array](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/) | Medium     |                  |          |
+|      |                                                              |            |                  |          |
+|      |                                                              |            |                  |          |
+
+## String
+
+| ID   | name                                                         | Difficulty | Similar Problems | Comments |
+| ---- | ------------------------------------------------------------ | ---------- | ---------------- | -------- |
+| 415  | [Add Strings](https://leetcode-cn.com/problems/add-strings/) | Easy       |                  |          |
 |      |                                                              |            |                  |          |
 |      |                                                              |            |                  |          |
 

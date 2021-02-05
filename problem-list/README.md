@@ -60,20 +60,31 @@
 | 15   | [3Sum](https://leetcode-cn.com/problems/3sum/)               | Medium     | 16、167          |          |
 | 16   | [3Sum Closest](https://leetcode-cn.com/problems/3sum-closest/) | Medium     |                  |          |
 | 167  | [Two Sum II Input Array Is Sorted](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | Easy       |                  |          |
+| 88   | [Merge Sorted Array](https://leetcode-cn.com/problems/merge-sorted-array/) | Easy       |                  |          |
 
 ## Tree
 
-| ID   | name                                                         | Difficulty | Similar Problems | Comments                     |
-| ---- | ------------------------------------------------------------ | ---------- | ---------------- | ---------------------------- |
-| 94   | [Binary Tree Inorder Traversal](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) | Medium     | 144、145         | 使用递归和辅助栈两种方法实现 |
-| 144  | [Binary Tree Preorder Traversal](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/) | Medium     |                  |                              |
-| 145  | [Binary Tree Postorder Traversal](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/) | Medium     |                  |                              |
-| 102  | [Binary Tree Level Order Traversal](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) | Medium     | 107、103         |                              |
-| 107  | [Binary Tree Level Order Traversal II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/) | Easy       |                  |                              |
-| 103  | [Binary Tree Zigzag Level Order Traversal](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/) | Medium     |                  |                              |
-| 236  | [Lowest Common Ancestor Of A Binary Tree](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) | Medium     | 235              |                              |
-| 235  | [Lowest Common Ancestor Of A Binary Search Tree](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Easy       |                  |                              |
-| 199  | [Binary Tree Right Side View](https://leetcode-cn.com/problems/binary-tree-right-side-view/) | Medium     |                  | 层次遍历                     |
+| ID   | name                                                         | Difficulty | Similar Problems | Comments                                    |
+| ---- | ------------------------------------------------------------ | ---------- | ---------------- | ------------------------------------------- |
+| 94   | [Binary Tree Inorder Traversal](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) | Medium     | 144、145         | 使用递归和辅助栈两种方法实现                |
+| 144  | [Binary Tree Preorder Traversal](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/) | Medium     |                  |                                             |
+| 145  | [Binary Tree Postorder Traversal](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/) | Medium     |                  |                                             |
+| 102  | [Binary Tree Level Order Traversal](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) | Medium     | 107、103         |                                             |
+| 107  | [Binary Tree Level Order Traversal II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/) | Easy       |                  |                                             |
+| 103  | [Binary Tree Zigzag Level Order Traversal](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/) | Medium     |                  |                                             |
+| 236  | [Lowest Common Ancestor Of A Binary Tree](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) | Medium     | 235              |                                             |
+| 235  | [Lowest Common Ancestor Of A Binary Search Tree](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Easy       |                  |                                             |
+| 199  | [Binary Tree Right Side View](https://leetcode-cn.com/problems/binary-tree-right-side-view/) | Medium     |                  | 层次遍历                                    |
+| 297  | [Serialize And Deserialize Binary Tree](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/) | Hard       | 449              |                                             |
+| 449  | [Serialize And Deserialize BST](https://leetcode-cn.com/problems/serialize-and-deserialize-bst/) | Medium     |                  | 这道题比297有意思，需要考虑二叉搜索树的性质 |
+| 508  | [Most Frequent Subtree Sum](https://leetcode-cn.com/problems/most-frequent-subtree-sum/) | Medium     |                  | DFS                                         |
+| 124  | [Bnary Tree Maximum Path Sum](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/) | Hard       | 543、687         |                                             |
+| 543  | [Diameter Of Binary Tree](https://leetcode-cn.com/problems/diameter-of-binary-tree/) | Easy       |                  |                                             |
+| 687  | [Longest Univalue Path](https://leetcode-cn.com/problems/longest-univalue-path/) | Medium     |                  |                                             |
+| 105  | [Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium     | 106、889、1008   |                                             |
+| 106  | [Cnstruct Binary Tree From Inorder And Postorder Traversal](https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | Medium     |                  |                                             |
+| 889  | [Construct Binary Tree From Preorder And Postorder Traversal/](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) | Medium     |                  |                                             |
+| 1008 | [Construct Binary Search Tree From Preorder Traversal](https://leetcode-cn.com/problems/construct-binary-search-tree-from-preorder-traversal/) | Medium     |                  |                                             |
 
 ## Graph
 
@@ -106,4 +117,12 @@
 | 415  | [Add Strings](https://leetcode-cn.com/problems/add-strings/) | Easy       |                  |          |
 |      |                                                              |            |                  |          |
 |      |                                                              |            |                  |          |
+
+## Binary Search
+
+| ID   | name                                             | Difficulty | Similar Problems | Comments |
+| ---- | ------------------------------------------------ | ---------- | ---------------- | -------- |
+| 69   | [Sqrtx](https://leetcode-cn.com/problems/sqrtx/) | Easy       |                  |          |
+|      |                                                  |            |                  |          |
+|      |                                                  |            |                  |          |
 

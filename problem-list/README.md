@@ -37,7 +37,8 @@
 | 445  | [Add Two Numbers II](https://leetcode-cn.com/problems/add-two-numbers-ii/) | Medium     |                  |                                                              |
 | 24   | [Swap Nodes In Pairs](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) | Medium     | 25、206          |                                                              |
 | 25   | [Reverse Nodes In K Group](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) | Hard       |                  |                                                              |
-| 206  | [Reverse Linked List](https://leetcode-cn.com/problems/reverse-linked-list/) | Easy       |                  |                                                              |
+| 206  | [Reverse Linked List](https://leetcode-cn.com/problems/reverse-linked-list/) | Easy       | 92               |                                                              |
+| 92   | [Reverse Linked List II](https://leetcode-cn.com/problems/reverse-linked-list-ii/) | Medium     |                  |                                                              |
 | 141  | [Linked List Cycle](https://leetcode-cn.com/problems/linked-list-cycle/) | Easy       | 142              |                                                              |
 | 142  | [Linked List Cycle II](https://leetcode-cn.com/problems/linked-list-cycle-ii/) | Medium     |                  |                                                              |
 | 21   | [Merge Two Sorted Lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/) | Easy       | 23               |                                                              |
@@ -57,9 +58,11 @@
 
 | ID   | name                                                         | Difficulty | Similar Problems | Comments |
 | ---- | ------------------------------------------------------------ | ---------- | ---------------- | -------- |
-| 15   | [3Sum](https://leetcode-cn.com/problems/3sum/)               | Medium     | 16、167          |          |
+| 11   | [Container With Most Water](https://leetcode-cn.com/problems/container-with-most-water/) | Medium     | 42               |          |
+| 42   | [Trapping Rain Water](https://leetcode-cn.com/problems/trapping-rain-water/) | Hard       |                  |          |
+| 167  | [Two Sum II Input Array Is Sorted](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | Easy       | 15、16           |          |
+| 15   | [3Sum](https://leetcode-cn.com/problems/3sum/)               | Medium     |                  |          |
 | 16   | [3Sum Closest](https://leetcode-cn.com/problems/3sum-closest/) | Medium     |                  |          |
-| 167  | [Two Sum II Input Array Is Sorted](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | Easy       |                  |          |
 | 88   | [Merge Sorted Array](https://leetcode-cn.com/problems/merge-sorted-array/) | Easy       |                  |          |
 
 ## Tree
@@ -69,6 +72,8 @@
 | 94   | [Binary Tree Inorder Traversal](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) | Medium     | 144、145         | 使用递归和辅助栈两种方法实现                |
 | 144  | [Binary Tree Preorder Traversal](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/) | Medium     |                  |                                             |
 | 145  | [Binary Tree Postorder Traversal](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/) | Medium     |                  |                                             |
+| 110  | [Balanced Binary Tree](https://leetcode-cn.com/problems/balanced-binary-tree/) | Easy       |                  |                                             |
+|      |                                                              |            |                  |                                             |
 | 102  | [Binary Tree Level Order Traversal](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) | Medium     | 107、103         |                                             |
 | 107  | [Binary Tree Level Order Traversal II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/) | Easy       |                  |                                             |
 | 103  | [Binary Tree Zigzag Level Order Traversal](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/) | Medium     |                  |                                             |
@@ -125,4 +130,12 @@
 | 69   | [Sqrtx](https://leetcode-cn.com/problems/sqrtx/) | Easy       |                  |          |
 |      |                                                  |            |                  |          |
 |      |                                                  |            |                  |          |
+
+## Array
+
+| ID   | name                                                         | Difficulty | Similar Problems | Comments |
+| ---- | ------------------------------------------------------------ | ---------- | ---------------- | -------- |
+| 54   | [Spiral Matrix](https://leetcode-cn.com/problems/spiral-matrix/) | Medium     | 59               |          |
+| 59   | [Spiral Matrix II](https://leetcode-cn.com/problems/spiral-matrix-ii/) | Medium     |                  |          |
+|      |                                                              |            |                  |          |
 

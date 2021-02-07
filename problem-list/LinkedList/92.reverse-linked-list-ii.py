@@ -1,7 +1,7 @@
 # !usr/bin/env python
 # -*- coding:utf-8 _*-
 # author:chenmeng
-# datetime:2021/1/8 15:22
+# datetime:2021/2/6 15:36
 
 # Definition for singly-linked list.
 class ListNode:
@@ -9,15 +9,20 @@ class ListNode:
         self.val = x
         self.next = None
 
+
 class Solution:
-    def reverseList(self, head: ListNode) -> ListNode:
-        if not head or not head.next:
+    def reverseBetween(self, head: ListNode, m: int, n: int) -> ListNode:
+        if not head:
             return head
         dummy = ListNode(-1)
         dummy.next = head
-        while head.next:
+        pre = dummy
+        for i in range(m - 1):
+            head = head.next
+            pre = pre.next
+        for i in range(m, n):
             next = head.next
             head.next = next.next
-            next.next = dummy.next
-            dummy.next = next
+            next.next = pre.next
+            pre.next = next
         return dummy.next

@@ -10,10 +10,13 @@
 | 70   | [Climbing Stairs](https://leetcode-cn.com/problems/climbing-stairs/) | Easy       | 746、1137                        |                                                              |
 | 746  | [Min Cost Climbing Stairs](https://leetcode-cn.com/problems/min-cost-climbing-stairs/) | Easy       |                                  |                                                              |
 | 1137 | [N-th Tribonacci Number](https://leetcode-cn.com/problems/n-th-tribonacci-number/) | Easy       |                                  |                                                              |
-| 303  | [Range Sum Query Immutable](https://leetcode-cn.com/problems/range-sum-query-immutable/) |            | 1218                             |                                                              |
-| 1218 | [Longest Arithmetic Subsequence Of Given Difference](https://leetcode-cn.com/problems/longest-arithmetic-subsequence-of-given-difference/) |            |                                  |                                                              |
+| 303  | [Range Sum Query Immutable](https://leetcode-cn.com/problems/range-sum-query-immutable/) | Easy       | 1218                             |                                                              |
+| 1218 | [Longest Arithmetic Subsequence Of Given Difference](https://leetcode-cn.com/problems/longest-arithmetic-subsequence-of-given-difference/) | Medium     |                                  |                                                              |
 | 53   | [Maximum Subarray](https://leetcode-cn.com/problems/maximum-subarray/) | Easy       | 121                              |                                                              |
 | 121  | [Best Time To Buy And Sell Stock](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) | Easy       |                                  |                                                              |
+| 62   | [Uique-Paths](https://leetcode-cn.com/problems/unique-paths/) | Medium     | 63、64                           |                                                              |
+| 63   | [Unique Paths II](https://leetcode-cn.com/problems/unique-paths-ii/) | Medium     |                                  |                                                              |
+| 64   | [Minimum Path Sum](https://leetcode-cn.com/problems/minimum-path-sum/) | Medium     |                                  |                                                              |
 |      |                                                              |            |                                  |                                                              |
 |      |                                                              |            |                                  |                                                              |
 | 72   | [Edit Distance](https://leetcode-cn.com/problems/edit-distance/) | Hard       | 1458、10、44、97、115、712、1187 | 这种都需要分各种情况，一定要分清楚再去写状态转移方程。       |

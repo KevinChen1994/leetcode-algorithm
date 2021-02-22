@@ -14,10 +14,17 @@
 | 1218 | [Longest Arithmetic Subsequence Of Given Difference](https://leetcode-cn.com/problems/longest-arithmetic-subsequence-of-given-difference/) | Medium     |                                  |                                                              |
 | 53   | [Maximum Subarray](https://leetcode-cn.com/problems/maximum-subarray/) | Easy       | 121                              |                                                              |
 | 121  | [Best Time To Buy And Sell Stock](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) | Easy       |                                  |                                                              |
-| 62   | [Uique-Paths](https://leetcode-cn.com/problems/unique-paths/) | Medium     | 63、64                           |                                                              |
+| 62   | [Uique-Paths](https://leetcode-cn.com/problems/unique-paths/) | Medium     | 63、64、120、174、931、1210      | 这类题目需要确定好路径是怎么进行的，就是当前位置可以哪些位置到达，依次判断可以到达的路径即可。 |
 | 63   | [Unique Paths II](https://leetcode-cn.com/problems/unique-paths-ii/) | Medium     |                                  |                                                              |
 | 64   | [Minimum Path Sum](https://leetcode-cn.com/problems/minimum-path-sum/) | Medium     |                                  |                                                              |
-|      |                                                              |            |                                  |                                                              |
+| 120  | [Triangle](https://leetcode-cn.com/problems/triangle/)       | Medium     |                                  |                                                              |
+| 174  | [Dungeon Game](https://leetcode-cn.com/problems/dungeon-game/) | Hard       |                                  |                                                              |
+| 931  | [Minimum Falling Path Sum](https://leetcode-cn.com/problems/minimum-falling-path-sum/) | Medium     |                                  |                                                              |
+| 1210 | [Minimum Moves To Reach Target With Rotations](https://leetcode-cn.com/problems/minimum-moves-to-reach-target-with-rotations/) |            |                                  |                                                              |
+| 85   | [Maximal Rectangle](https://leetcode-cn.com/problems/maximal-rectangle/) | Hard       | 221、304、1277                   | 定义好dp状态转换，相对容易一些。                             |
+| 221  | [Maximal Square](https://leetcode-cn.com/problems/maximal-square/) | Medium     |                                  |                                                              |
+| 304  | [Range Sum Query 2D Immutable](https://leetcode-cn.com/problems/range-sum-query-2d-immutable/) |            |                                  |                                                              |
+| 1277 | [Count Square Submatrices With All Ones](https://leetcode-cn.com/problems/count-square-submatrices-with-all-ones/) | Medium     |                                  |                                                              |
 |      |                                                              |            |                                  |                                                              |
 | 72   | [Edit Distance](https://leetcode-cn.com/problems/edit-distance/) | Hard       | 1458、10、44、97、115、712、1187 | 这种都需要分各种情况，一定要分清楚再去写状态转移方程。       |
 | 1458 | [Max Dot Product Of Two Subsequences](https://leetcode-cn.com/problems/max-dot-product-of-two-subsequences/) | Hard       |                                  |                                                              |

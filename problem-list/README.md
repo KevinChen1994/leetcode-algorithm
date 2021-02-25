@@ -25,6 +25,10 @@
 | 221  | [Maximal Square](https://leetcode-cn.com/problems/maximal-square/) | Medium     |                                  |                                                              |
 | 304  | [Range Sum Query 2D Immutable](https://leetcode-cn.com/problems/range-sum-query-2d-immutable/) |            |                                  |                                                              |
 | 1277 | [Count Square Submatrices With All Ones](https://leetcode-cn.com/problems/count-square-submatrices-with-all-ones/) | Medium     |                                  |                                                              |
+| 198  | [House Robber](https://leetcode-cn.com/problems/house-robber/) | Medium     | 213、309、740                    |                                                              |
+| 213  | [House Robber II](https://leetcode-cn.com/problems/house-robber-ii/) | Medium     |                                  | 将原数组进行分割，转换成198                                  |
+| 309  | [Best Time To Buy And Sell Stock With Cooldown](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | Medium     |                                  |                                                              |
+| 740  | [Delete And Earn](https://leetcode-cn.com/problems/delete-and-earn/) | Medium     |                                  | 转换为打家劫舍                                               |
 |      |                                                              |            |                                  |                                                              |
 | 72   | [Edit Distance](https://leetcode-cn.com/problems/edit-distance/) | Hard       | 1458、10、44、97、115、712、1187 | 这种都需要分各种情况，一定要分清楚再去写状态转移方程。       |
 | 1458 | [Max Dot Product Of Two Subsequences](https://leetcode-cn.com/problems/max-dot-product-of-two-subsequences/) | Hard       |                                  |                                                              |
@@ -152,5 +156,19 @@
 | ---- | ------------------------------------------------------------ | ---------- | ---------------- | -------- |
 | 54   | [Spiral Matrix](https://leetcode-cn.com/problems/spiral-matrix/) | Medium     | 59               |          |
 | 59   | [Spiral Matrix II](https://leetcode-cn.com/problems/spiral-matrix-ii/) | Medium     |                  |          |
+|      |                                                              |            |                  |          |
+
+## Advanced
+
+| ID   | name                                                         | Difficulty | Similar Problems | Comments |
+| ---- | ------------------------------------------------------------ | ---------- | ---------------- | -------- |
+| 208  | [Implement Trie Prefix Tree](https://leetcode-cn.com/problems/implement-trie-prefix-tree/) | Medium     |                  |          |
+|      |                                                              |            |                  |          |
+
+## DivideAndconquer
+
+| ID   | name                                                         | Difficulty | Similar Problems | Comments |
+| ---- | ------------------------------------------------------------ | ---------- | ---------------- | -------- |
+| 169  | [Mjority Element](https://leetcode-cn.com/problems/majority-element/) | Easy       |                  |          |
 |      |                                                              |            |                  |          |
 

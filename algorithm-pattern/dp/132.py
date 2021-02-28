@@ -24,7 +24,11 @@ class Solution:
                 continue
             # 枚举分割点，如果s[0:i]不是回文，那么从s[1:i]开始进行判断，如果是回文就在那个位置的需要切割的次数加1，
             # 最终去最小值就是这个序列需要切割的最小值
-            dp[i] = min([dp[j] + 1 for j in range(i) if check_palindrome[j + 1][i]])
+            for j in range(i):
+                # check_palindrome[j + 1][i]的原因是j在这个循环中取不到i的值，所以就忽略了单个值的情况；
+                # 另外j=0的时候已经在上边判断过了，这里无需在判断。
+                if check_palindrome[j + 1][i]:
+                    dp[i] = min(dp[j] + 1, dp[i])
 
         return dp[size - 1]
 

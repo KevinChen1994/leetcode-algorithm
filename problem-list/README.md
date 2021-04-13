@@ -31,6 +31,14 @@
 | 740  | [Delete And Earn](https://leetcode-cn.com/problems/delete-and-earn/) | Medium     |                                  | 转换为打家劫舍                                               |
 | 790  | [Domino And Tromino Tiling](https://leetcode-cn.com/problems/domino-and-tromino-tiling/) | Medium     |                                  |                                                              |
 | 801  | [Minimum Swaps To Make Sequences Increasing](https://leetcode-cn.com/problems/minimum-swaps-to-make-sequences-increasing/) | Medium     |                                  |                                                              |
+| 279  | [Perfect Squares](https://leetcode-cn.com/problems/perfect-squares/) | Medium     |                                  |                                                              |
+| 139  | [Word Break](https://leetcode-cn.com/problems/word-break/)   | Medium     | 140、818                         |                                                              |
+| 140  | [Word Break II](https://leetcode-cn.com/problems/word-break-ii/) | Hard       |                                  | 记忆化递归                                                   |
+| 818  | [Race Car](https://leetcode-cn.com/problems/race-car/)       | Hard       |                                  |                                                              |
+| 300  | [Longest Increasing Subsequence](https://leetcode-cn.com/problems/longest-increasing-subsequence/) | Medium     | 673、1048                        |                                                              |
+| 673  | [Number Of Longest Increasing Subsequence](https://leetcode-cn.com/problems/number-of-longest-increasing-subsequence/) | Medium     |                                  | 对300的进阶，挺有意思                                        |
+| 1048 | [Longest String Chain](https://leetcode-cn.com/problems/longest-string-chain/) | Medium     |                                  |                                                              |
+| 96   | [Unique Binary Search Trees](https://leetcode-cn.com/problems/unique-binary-search-trees/) | Medium     |                                  |                                                              |
 |      |                                                              |            |                                  |                                                              |
 | 72   | [Edit Distance](https://leetcode-cn.com/problems/edit-distance/) | Hard       | 1458、10、44、97、115、712、1187 | 这种都需要分各种情况，一定要分清楚再去写状态转移方程。       |
 | 1458 | [Max Dot Product Of Two Subsequences](https://leetcode-cn.com/problems/max-dot-product-of-two-subsequences/) | Hard       |                                  |                                                              |

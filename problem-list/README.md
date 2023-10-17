@@ -52,7 +52,10 @@
 | 1092 | [最短公共超序列](https://leetcode.cn/problems/shortest-common-supersequence/) | Hard       |                                  |                                                              |
 | 718  | [最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) | Medium     |                                  |                                                              |
 | 1139 | [最大的以 1 为边界的正方形](https://leetcode.cn/problems/largest-1-bordered-square/) | Medium     |                                  |                                                              |
-| 688  | [骑士在棋盘上的概率](https://leetcode.cn/problems/knight-probability-in-chessboard/) | Medium     |                                  |                                                              |
+| 688  | [骑士在棋盘上的概率](https://leetcode.cn/problems/knight-probability-in-chessboard/) | Medium     | 576、935                         |                                                              |
+| 576  | [出界的路径数](https://leetcode.cn/problems/out-of-boundary-paths/) | Medium     |                                  |                                                              |
+| 935  | [骑士拨号器](https://leetcode.cn/problems/knight-dialer/)    | Medium     |                                  |                                                              |
+| 322  | [零钱兑换](https://leetcode.cn/problems/coin-change/)        | Medium     |                                  |                                                              |
 
 ## LinkedList
 

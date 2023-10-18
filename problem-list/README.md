@@ -55,7 +55,9 @@
 | 688  | [骑士在棋盘上的概率](https://leetcode.cn/problems/knight-probability-in-chessboard/) | Medium     | 576、935                         |                                                              |
 | 576  | [出界的路径数](https://leetcode.cn/problems/out-of-boundary-paths/) | Medium     |                                  |                                                              |
 | 935  | [骑士拨号器](https://leetcode.cn/problems/knight-dialer/)    | Medium     |                                  |                                                              |
-| 322  | [零钱兑换](https://leetcode.cn/problems/coin-change/)        | Medium     |                                  |                                                              |
+| 322  | [零钱兑换](https://leetcode.cn/problems/coin-change/)        | Medium     | 377、416                         |                                                              |
+| 377  | [组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv/) | Medium     |                                  | 初始状态很重要                                               |
+| 416  | [分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) | Medium     |                                  | 322的逆向思维了                                              |
 
 ## LinkedList
 

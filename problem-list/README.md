@@ -55,9 +55,12 @@
 | 688  | [骑士在棋盘上的概率](https://leetcode.cn/problems/knight-probability-in-chessboard/) | Medium     | 576、935                         |                                                              |
 | 576  | [出界的路径数](https://leetcode.cn/problems/out-of-boundary-paths/) | Medium     |                                  |                                                              |
 | 935  | [骑士拨号器](https://leetcode.cn/problems/knight-dialer/)    | Medium     |                                  |                                                              |
-| 322  | [零钱兑换](https://leetcode.cn/problems/coin-change/)        | Medium     | 377、416                         |                                                              |
+| 322  | [零钱兑换](https://leetcode.cn/problems/coin-change/)        | Medium     | 377、416、494、1043              |                                                              |
 | 377  | [组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv/) | Medium     |                                  | 初始状态很重要                                               |
-| 416  | [分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) | Medium     |                                  | 322的逆向思维了                                              |
+| 416  | [分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) | Medium     |                                  | 322的逆向思维了，难点在于如何转换成01背包问题，实现过程中需要注意每个背包只使用一次，并且需要记住dp状态，不能覆盖之前的正确结果。 |
+| 494  | [目标和](https://leetcode.cn/problems/target-sum/)           | Medium     |                                  | 需要转换思想，将其转换为背包问题，说实话挺难想到的           |
+| 1043 | [分隔数组以得到最大和](https://leetcode.cn/problems/partition-array-for-maximum-sum/) | Medium     |                                  | 与416问题一样。                                              |
+| 1220 | [统计元音字母序列的数目](https://leetcode.cn/problems/count-vowels-permutation/) | Hard       |                                  | 虽然是Hard，但是用背包思想去做还是不难的                     |
 
 ## LinkedList
 

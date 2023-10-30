@@ -41,3 +41,12 @@ class Solution:
         self.inorder(root.left)
         self.result.append(root.val)
         self.inorder(root.right)
+
+if __name__ == '__main__':
+    left = TreeNode('B')
+    right = TreeNode('C')
+    tree = TreeNode('A')
+    tree.left = left
+    tree.right = right
+    solution = Solution()
+    res = solution.inorderTraversal(tree)

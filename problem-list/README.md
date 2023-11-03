@@ -4,63 +4,65 @@
 
 ## DP
 
-| ID   | name                                                         | Difficulty | Similar Problems                 | Comments                                                     |
-| :--- | ------------------------------------------------------------ | ---------- | -------------------------------- | ------------------------------------------------------------ |
-| 730  | [统计不同回文子序列](https://leetcode.cn/problems/count-different-palindromic-subsequences/) | Hard       |                                  |                                                              |
-| 978  | [最长湍流子数组](https://leetcode.cn/problems/longest-turbulent-subarray/) | Hard       |                                  |                                                              |
-| 70   | [爬楼梯](https://leetcode.cn/problems/climbing-stairs/)      | Easy       | 746、1137                        |                                                              |
-| 746  | [使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/) | Easy       |                                  |                                                              |
-| 1137 | [第 N 个泰波那契数](https://leetcode.cn/problems/n-th-tribonacci-number/) | Easy       |                                  |                                                              |
-| 303  | [区域和检索 - 数组不可变](https://leetcode.cn/problems/range-sum-query-immutable/) | Easy       | 1218                             |                                                              |
-| 1218 | [最长定差子序列](https://leetcode.cn/problems/longest-arithmetic-subsequence-of-given-difference/) | Medium     |                                  |                                                              |
-| 53   | [最大子数组和](https://leetcode.cn/problems/maximum-subarray/) | Easy       | 121                              |                                                              |
-| 121  | [买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) | Easy       |                                  |                                                              |
-| 62   | [不同路径](https://leetcode.cn/problems/unique-paths/)       | Medium     | 63、64、120、174、931、1210      | 这类题目需要确定好路径是怎么进行的，就是当前位置可以哪些位置到达，依次判断可以到达的路径即可。 |
-| 63   | [不同路径 II](https://leetcode.cn/problems/unique-paths-ii/) | Medium     |                                  |                                                              |
-| 64   | [最小路径和](https://leetcode.cn/problems/minimum-path-sum/) | Medium     |                                  |                                                              |
-| 120  | [三角形最小路径和](https://leetcode.cn/problems/triangle/)   | Medium     |                                  |                                                              |
-| 174  | [地下城游戏](https://leetcode.cn/problems/dungeon-game/)     | Hard       |                                  |                                                              |
-| 931  | [下降路径最小和](https://leetcode.cn/problems/minimum-falling-path-sum/) | Medium     |                                  |                                                              |
-| 1210 | [穿过迷宫的最少移动次数](https://leetcode.cn/problems/minimum-moves-to-reach-target-with-rotations/) |            |                                  |                                                              |
-| 85   | [最大矩形](https://leetcode.cn/problems/maximal-rectangle/)  | Hard       | 221、304、1277                   | 定义好dp状态转换，相对容易一些。                             |
-| 221  | [最大正方形](https://leetcode.cn/problems/maximal-square/)   | Medium     |                                  |                                                              |
-| 304  | [二维区域和检索 - 矩阵不可变](https://leetcode.cn/problems/range-sum-query-2d-immutable/) |            |                                  |                                                              |
-| 1277 | [统计全为 1 的正方形子矩阵](https://leetcode.cn/problems/count-square-submatrices-with-all-ones/) | Medium     |                                  |                                                              |
-| 198  | [打家劫舍](https://leetcode.cn/problems/house-robber/)       | Medium     | 213、309、740、790、801          |                                                              |
-| 213  | [打家劫舍 II](https://leetcode.cn/problems/house-robber-ii/) | Medium     |                                  | 将原数组进行分割，转换成198                                  |
-| 309  | [买卖股票的最佳时机含冷冻期](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | Medium     |                                  |                                                              |
-| 740  | [删除并获得点数](https://leetcode.cn/problems/delete-and-earn/) | Medium     |                                  | 转换为打家劫舍                                               |
-| 790  | [多米诺和托米诺平铺](https://leetcode.cn/problems/domino-and-tromino-tiling/) | Medium     |                                  |                                                              |
-| 801  | [使序列递增的最小交换次数](https://leetcode.cn/problems/minimum-swaps-to-make-sequences-increasing/) | Medium     |                                  |                                                              |
-| 279  | [完全平方数](https://leetcode.cn/problems/perfect-squares/)  | Medium     |                                  |                                                              |
-| 139  | [单词拆分](https://leetcode.cn/problems/word-break/)         | Medium     | 140、818                         |                                                              |
-| 140  | [单词拆分 II](https://leetcode.cn/problems/word-break-ii/)   | Hard       |                                  | 记忆化递归                                                   |
-| 818  | [赛车](https://leetcode.cn/problems/race-car/)               | Hard       |                                  |                                                              |
-| 300  | [最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/) | Medium     | 673、1048                        |                                                              |
-| 673  | [最长递增子序列的个数](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/) | Medium     |                                  | 对300的进阶，挺有意思                                        |
-| 1048 | [最长字符串链](https://leetcode.cn/problems/longest-string-chain/) | Medium     |                                  |                                                              |
-| 96   | [不同的二叉搜索树](https://leetcode.cn/problems/unique-binary-search-trees/) | Medium     |                                  |                                                              |
-| 72   | [编辑距离](https://leetcode.cn/problems/edit-distance/)      | Hard       | 1458、10、44、97、115、712、1187 | 这种都需要分各种情况，一定要分清楚再去写状态转移方程。       |
-| 1458 | [两个子序列的最大点积](https://leetcode.cn/problems/max-dot-product-of-two-subsequences/) | Hard       |                                  |                                                              |
-| 10   | [正则表达式匹配](https://leetcode.cn/problems/regular-expression-matching/) | Hard       |                                  |                                                              |
-| 44   | [通配符匹配](https://leetcode.cn/problems/wildcard-matching/) | Hard       |                                  | 与第10题相比，稍微简单了一点。                               |
-| 97   | [交错字符串](https://leetcode.cn/problems/interleaving-string/) | Hard       |                                  | 这类题目不要忘记首先定义好初始状态，有时候不只有dp[[0]][][0]才是True，需要考虑全所有的初始状态，例如：10中的需要判断如果开头是.*的需要将dp矩阵设置到他所代表的位置；97中需要提前定义好s3是s1还是s2谁先来组成的。 |
-| 115  | [不同的子序列](https://leetcode.cn/problems/distinct-subsequences/) | Hard       |                                  |                                                              |
-| 712  | [两个字符串的最小ASCII删除和](https://leetcode.cn/problems/minimum-ascii-delete-sum-for-two-strings/) | Medium     |                                  |                                                              |
-| 1187 | [使数组严格递增](https://leetcode.cn/problems/make-array-strictly-increasing/) | Hard       |                                  | 太难了，做了一天！                                           |
-| 1143 | [最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence/) | Medium     |                                  | 很经典的一道题，做过前边几道题，看到这道题就很简单了。       |
-| 1092 | [最短公共超序列](https://leetcode.cn/problems/shortest-common-supersequence/) | Hard       |                                  |                                                              |
-| 718  | [最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) | Medium     |                                  |                                                              |
-| 1139 | [最大的以 1 为边界的正方形](https://leetcode.cn/problems/largest-1-bordered-square/) | Medium     |                                  |                                                              |
-| 688  | [骑士在棋盘上的概率](https://leetcode.cn/problems/knight-probability-in-chessboard/) | Medium     | 576、935                         |                                                              |
-| 576  | [出界的路径数](https://leetcode.cn/problems/out-of-boundary-paths/) | Medium     |                                  |                                                              |
-| 935  | [骑士拨号器](https://leetcode.cn/problems/knight-dialer/)    | Medium     |                                  |                                                              |
-| 322  | [零钱兑换](https://leetcode.cn/problems/coin-change/)        | Medium     | 377、416、494、1043              |                                                              |
-| 377  | [组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv/) | Medium     |                                  | 初始状态很重要                                               |
-| 416  | [分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) | Medium     |                                  | 322的逆向思维了，难点在于如何转换成01背包问题，实现过程中需要注意每个背包只使用一次，并且需要记住dp状态，不能覆盖之前的正确结果。 |
-| 494  | [目标和](https://leetcode.cn/problems/target-sum/)           | Medium     |                                  | 需要转换思想，将其转换为背包问题，说实话挺难想到的           |
-| 1043 | [分隔数组以得到最大和](https://leetcode.cn/problems/partition-array-for-maximum-sum/) | Medium     |                                  | 与416问题一样。                                              |
-| 1220 | [统计元音字母序列的数目](https://leetcode.cn/problems/count-vowels-permutation/) | Hard       |                                  | 虽然是Hard，但是用背包思想去做还是不难的                     |
+| ID   | name                                                         | Difficulty | Similar Problems                      | Comments                                                     |
+| :--- | ------------------------------------------------------------ | ---------- | ------------------------------------- | ------------------------------------------------------------ |
+| 730  | [统计不同回文子序列](https://leetcode.cn/problems/count-different-palindromic-subsequences/) | Hard       |                                       |                                                              |
+| 978  | [最长湍流子数组](https://leetcode.cn/problems/longest-turbulent-subarray/) | Hard       |                                       |                                                              |
+| 70   | [爬楼梯](https://leetcode.cn/problems/climbing-stairs/)      | Easy       | 746、1137                             |                                                              |
+| 746  | [使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/) | Easy       |                                       |                                                              |
+| 1137 | [第 N 个泰波那契数](https://leetcode.cn/problems/n-th-tribonacci-number/) | Easy       |                                       |                                                              |
+| 303  | [区域和检索 - 数组不可变](https://leetcode.cn/problems/range-sum-query-immutable/) | Easy       | 1218                                  |                                                              |
+| 1218 | [最长定差子序列](https://leetcode.cn/problems/longest-arithmetic-subsequence-of-given-difference/) | Medium     |                                       |                                                              |
+| 53   | [最大子数组和](https://leetcode.cn/problems/maximum-subarray/) | Easy       | 121                                   |                                                              |
+| 121  | [买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) | Easy       |                                       |                                                              |
+| 62   | [不同路径](https://leetcode.cn/problems/unique-paths/)       | Medium     | 63、64、120、174、931、1210           | 这类题目需要确定好路径是怎么进行的，就是当前位置可以哪些位置到达，依次判断可以到达的路径即可。 |
+| 63   | [不同路径 II](https://leetcode.cn/problems/unique-paths-ii/) | Medium     |                                       |                                                              |
+| 64   | [最小路径和](https://leetcode.cn/problems/minimum-path-sum/) | Medium     |                                       |                                                              |
+| 120  | [三角形最小路径和](https://leetcode.cn/problems/triangle/)   | Medium     |                                       |                                                              |
+| 174  | [地下城游戏](https://leetcode.cn/problems/dungeon-game/)     | Hard       |                                       |                                                              |
+| 931  | [下降路径最小和](https://leetcode.cn/problems/minimum-falling-path-sum/) | Medium     |                                       |                                                              |
+| 1210 | [穿过迷宫的最少移动次数](https://leetcode.cn/problems/minimum-moves-to-reach-target-with-rotations/) |            |                                       |                                                              |
+| 85   | [最大矩形](https://leetcode.cn/problems/maximal-rectangle/)  | Hard       | 221、304、1277                        | 定义好dp状态转换，相对容易一些。                             |
+| 221  | [最大正方形](https://leetcode.cn/problems/maximal-square/)   | Medium     |                                       |                                                              |
+| 304  | [二维区域和检索 - 矩阵不可变](https://leetcode.cn/problems/range-sum-query-2d-immutable/) |            |                                       |                                                              |
+| 1277 | [统计全为 1 的正方形子矩阵](https://leetcode.cn/problems/count-square-submatrices-with-all-ones/) | Medium     |                                       |                                                              |
+| 198  | [打家劫舍](https://leetcode.cn/problems/house-robber/)       | Medium     | 213、309、740、790、801               |                                                              |
+| 213  | [打家劫舍 II](https://leetcode.cn/problems/house-robber-ii/) | Medium     |                                       | 将原数组进行分割，转换成198                                  |
+| 309  | [买卖股票的最佳时机含冷冻期](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | Medium     |                                       |                                                              |
+| 740  | [删除并获得点数](https://leetcode.cn/problems/delete-and-earn/) | Medium     |                                       | 转换为打家劫舍                                               |
+| 790  | [多米诺和托米诺平铺](https://leetcode.cn/problems/domino-and-tromino-tiling/) | Medium     |                                       |                                                              |
+| 801  | [使序列递增的最小交换次数](https://leetcode.cn/problems/minimum-swaps-to-make-sequences-increasing/) | Medium     |                                       |                                                              |
+| 279  | [完全平方数](https://leetcode.cn/problems/perfect-squares/)  | Medium     |                                       |                                                              |
+| 139  | [单词拆分](https://leetcode.cn/problems/word-break/)         | Medium     | 140、818                              |                                                              |
+| 140  | [单词拆分 II](https://leetcode.cn/problems/word-break-ii/)   | Hard       |                                       | 记忆化递归                                                   |
+| 818  | [赛车](https://leetcode.cn/problems/race-car/)               | Hard       |                                       |                                                              |
+| 300  | [最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/) | Medium     | 673、1048                             |                                                              |
+| 673  | [最长递增子序列的个数](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/) | Medium     |                                       | 对300的进阶，挺有意思                                        |
+| 1048 | [最长字符串链](https://leetcode.cn/problems/longest-string-chain/) | Medium     |                                       |                                                              |
+| 96   | [不同的二叉搜索树](https://leetcode.cn/problems/unique-binary-search-trees/) | Medium     |                                       |                                                              |
+| 72   | [编辑距离](https://leetcode.cn/problems/edit-distance/)      | Hard       | 1458、10、44、97、115、712、1187      | 这种都需要分各种情况，一定要分清楚再去写状态转移方程。       |
+| 1458 | [两个子序列的最大点积](https://leetcode.cn/problems/max-dot-product-of-two-subsequences/) | Hard       |                                       |                                                              |
+| 10   | [正则表达式匹配](https://leetcode.cn/problems/regular-expression-matching/) | Hard       |                                       |                                                              |
+| 44   | [通配符匹配](https://leetcode.cn/problems/wildcard-matching/) | Hard       |                                       | 与第10题相比，稍微简单了一点。                               |
+| 97   | [交错字符串](https://leetcode.cn/problems/interleaving-string/) | Hard       |                                       | 这类题目不要忘记首先定义好初始状态，有时候不只有dp[[0]][][0]才是True，需要考虑全所有的初始状态，例如：10中的需要判断如果开头是.*的需要将dp矩阵设置到他所代表的位置；97中需要提前定义好s3是s1还是s2谁先来组成的。 |
+| 115  | [不同的子序列](https://leetcode.cn/problems/distinct-subsequences/) | Hard       |                                       |                                                              |
+| 712  | [两个字符串的最小ASCII删除和](https://leetcode.cn/problems/minimum-ascii-delete-sum-for-two-strings/) | Medium     |                                       |                                                              |
+| 1187 | [使数组严格递增](https://leetcode.cn/problems/make-array-strictly-increasing/) | Hard       |                                       | 太难了，做了一天！                                           |
+| 1143 | [最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence/) | Medium     |                                       | 很经典的一道题，做过前边几道题，看到这道题就很简单了。       |
+| 1092 | [最短公共超序列](https://leetcode.cn/problems/shortest-common-supersequence/) | Hard       |                                       |                                                              |
+| 718  | [最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) | Medium     |                                       |                                                              |
+| 1139 | [最大的以 1 为边界的正方形](https://leetcode.cn/problems/largest-1-bordered-square/) | Medium     |                                       |                                                              |
+| 688  | [骑士在棋盘上的概率](https://leetcode.cn/problems/knight-probability-in-chessboard/) | Medium     | 576、935                              |                                                              |
+| 576  | [出界的路径数](https://leetcode.cn/problems/out-of-boundary-paths/) | Medium     |                                       |                                                              |
+| 935  | [骑士拨号器](https://leetcode.cn/problems/knight-dialer/)    | Medium     |                                       |                                                              |
+| 322  | [零钱兑换](https://leetcode.cn/problems/coin-change/)        | Medium     | 377、416、494、1043、1220、1262、1269 |                                                              |
+| 377  | [组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv/) | Medium     |                                       | 初始状态很重要                                               |
+| 416  | [分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) | Medium     |                                       | 322的逆向思维了，难点在于如何转换成01背包问题，实现过程中需要注意每个背包只使用一次，并且需要记住dp状态，不能覆盖之前的正确结果。 |
+| 494  | [目标和](https://leetcode.cn/problems/target-sum/)           | Medium     |                                       | 需要转换思想，将其转换为背包问题，说实话挺难想到的           |
+| 1043 | [分隔数组以得到最大和](https://leetcode.cn/problems/partition-array-for-maximum-sum/) | Medium     |                                       | 与416问题一样。                                              |
+| 1220 | [统计元音字母序列的数目](https://leetcode.cn/problems/count-vowels-permutation/) | Hard       |                                       | 虽然是Hard，但是用背包思想去做还是不难的                     |
+| 1262 | [可被三整除的最大和](https://leetcode.cn/problems/greatest-sum-divisible-by-three/) | Medium     |                                       | 背包问题，但是背包重量并不是总和                             |
+| 1269 | [停在原地的方案数](https://leetcode.cn/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/) | Hard       |                                       | 整体不难，方向容易搞错                                       |
 
 ## LinkedList
 

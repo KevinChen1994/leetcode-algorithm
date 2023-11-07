@@ -63,7 +63,9 @@
 | 1220 | [统计元音字母序列的数目](https://leetcode.cn/problems/count-vowels-permutation/) | Hard       |                                       | 虽然是Hard，但是用背包思想去做还是不难的                     |
 | 1262 | [可被三整除的最大和](https://leetcode.cn/problems/greatest-sum-divisible-by-three/) | Medium     |                                       | 背包问题，但是背包重量并不是总和                             |
 | 1269 | [停在原地的方案数](https://leetcode.cn/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/) | Hard       |                                       | 整体不难，方向容易搞错                                       |
-| 813  | [最大平均值和的分组](https://leetcode.cn/problems/largest-sum-of-averages/) | Medium     |                                       | 注意分割子数组是按顺序来的                                   |
+| 813  | [最大平均值和的分组](https://leetcode.cn/problems/largest-sum-of-averages/) | Medium     | 1278、1335                            | 注意分割子数组是按顺序来的                                   |
+| 1278 | [分割回文串 III](https://leetcode.cn/problems/palindrome-partitioning-iii/) | Hard       |                                       |                                                              |
+| 1335 | [工作计划的最低难度](https://leetcode.cn/problems/minimum-difficulty-of-a-job-schedule/) | Hard       |                                       |                                                              |
 
 ## LinkedList
 

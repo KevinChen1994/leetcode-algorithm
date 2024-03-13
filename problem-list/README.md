@@ -68,7 +68,8 @@
 | 1335 | [工作计划的最低难度](https://leetcode.cn/problems/minimum-difficulty-of-a-job-schedule/) | Hard       |                                       |                                                              |
 | 410  | [分割数组的最大值](https://leetcode.cn/problems/split-array-largest-sum/) | Hard       |                                       |                                                              |
 | 1223 | [掷骰子模拟](https://leetcode.cn/problems/dice-roll-simulation/) | Hard       |                                       | 转移矩阵比较好想，但是如何判断当前数字是否无效，以及他的组合比较困难 |
-| 312  | [戳气球](https://leetcode.cn/problems/burst-balloons/)       | Hard       |                                       |                                                              |
+| 312  | [戳气球](https://leetcode.cn/problems/burst-balloons/)       | Hard       | 664                                   |                                                              |
+| 664  | [奇怪的打印机](https://leetcode.cn/problems/strange-printer/) | Hard       |                                       |                                                              |
 
 ## LinkedList
 

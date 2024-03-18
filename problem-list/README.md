@@ -68,10 +68,12 @@
 | 1335 | [工作计划的最低难度](https://leetcode.cn/problems/minimum-difficulty-of-a-job-schedule/) | Hard       |                                       |                                                              |
 | 410  | [分割数组的最大值](https://leetcode.cn/problems/split-array-largest-sum/) | Hard       |                                       |                                                              |
 | 1223 | [掷骰子模拟](https://leetcode.cn/problems/dice-roll-simulation/) | Hard       |                                       | 转移矩阵比较好想，但是如何判断当前数字是否无效，以及他的组合比较困难 |
-| 312  | [戳气球](https://leetcode.cn/problems/burst-balloons/)       | Hard       | 664、1024、1039                       |                                                              |
+| 312  | [戳气球](https://leetcode.cn/problems/burst-balloons/)       | Hard       | 664、1024、1039、1140、1130           |                                                              |
 | 664  | [奇怪的打印机](https://leetcode.cn/problems/strange-printer/) | Hard       |                                       |                                                              |
 | 1024 | [视频拼接](https://leetcode.cn/problems/video-stitching/)    | Medium     |                                       | 题目不难，转移矩阵挺好想的，就是通过小区间推断大区间，但是我一开始使用的二维矩阵，把问题想复杂了。 |
 | 1039 | [多边形三角剖分的最低得分](https://leetcode.cn/problems/minimum-score-triangulation-of-polygon/) | Medium     |                                       |                                                              |
+| 1140 | [石子游戏 II](https://leetcode.cn/problems/stone-game-ii/)   | Medium     |                                       |                                                              |
+| 1130 | [叶值的最小代价生成树](https://leetcode.cn/problems/minimum-cost-tree-from-leaf-values/) | Medium     |                                       |                                                              |
 
 ## LinkedList
 

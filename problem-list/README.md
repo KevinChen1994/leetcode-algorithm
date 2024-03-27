@@ -74,6 +74,8 @@
 | 1039 | [多边形三角剖分的最低得分](https://leetcode.cn/problems/minimum-score-triangulation-of-polygon/) | Medium     |                                       |                                                              |
 | 1140 | [石子游戏 II](https://leetcode.cn/problems/stone-game-ii/)   | Medium     |                                       |                                                              |
 | 1130 | [叶值的最小代价生成树](https://leetcode.cn/problems/minimum-cost-tree-from-leaf-values/) | Medium     |                                       |                                                              |
+| 741  | [摘樱桃](https://leetcode.cn/problems/cherry-pickup/)        | Hard       |                                       | 根本做不出来                                                 |
+| 546  | [移除盒子](https://leetcode.cn/problems/remove-boxes/)       | Hard       |                                       | 难                                                           |
 
 ## LinkedList
 

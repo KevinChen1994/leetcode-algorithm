@@ -76,6 +76,10 @@
 | 1130 | [叶值的最小代价生成树](https://leetcode.cn/problems/minimum-cost-tree-from-leaf-values/) | Medium     |                                       |                                                              |
 | 741  | [摘樱桃](https://leetcode.cn/problems/cherry-pickup/)        | Hard       |                                       | 根本做不出来                                                 |
 | 546  | [移除盒子](https://leetcode.cn/problems/remove-boxes/)       | Hard       |                                       | 难                                                           |
+| 943  | [最短超级串](https://leetcode.cn/problems/find-the-shortest-superstring/) | Hard       |                                       | 想到了计算两个单词的重叠情况，没有想明白怎么根据最大重叠字母进行组合。 |
+| 996  | [正方形数组的数目](https://leetcode.cn/problems/number-of-squareful-arrays/) | Hard       |                                       |                                                              |
+| 980  | [不同路径 III](https://leetcode.cn/problems/unique-paths-iii/) | Hard       |                                       | 题目并不是特别难，想到使用回溯的方法就能做出来。             |
+| 1125 | [最小的必要团队](https://leetcode.cn/problems/smallest-sufficient-team/) | Hard       |                                       | 我是菜狗                                                     |
 
 ## LinkedList
 

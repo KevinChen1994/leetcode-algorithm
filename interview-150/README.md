@@ -12,3 +12,4 @@
 | 121  | [买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)               | Easy       | 数组、动态规划                 |          |
 | 122  | [买卖股票的最佳时机 II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)         | Medium     | 贪心、数组、动态规划           |          |
 | 55   | [跳跃游戏](https://leetcode.cn/problems/jump-game/)                                               | Medium     | 贪心、数组、动态规划           |
+| 45   | [跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/description/)                             | Medium     | 贪心、数组、动态规划           |

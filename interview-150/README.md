@@ -15,3 +15,4 @@
 | 45   | [跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/)                                         | Medium     | 贪心、数组、动态规划             |
 | 274  | [H 指数](https://leetcode.cn/problems/h-index/description/)                                       | Medium     | 数组、计数排序、排序             |
 | 380  | [O(1) 时间插入、删除和获取随机元素](https://leetcode.cn/problems/insert-delete-getrandom-o1/)     | Medium     | 设计、数组、哈希表、数学、随机化 |
+| 238  | [除自身以外数组的乘积](https://leetcode.cn/problems/product-of-array-except-self/)                | Medium     | 数组、前缀和                     |

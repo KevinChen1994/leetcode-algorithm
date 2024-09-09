@@ -17,3 +17,4 @@
 | 380  | [O(1) 时间插入、删除和获取随机元素](https://leetcode.cn/problems/insert-delete-getrandom-o1/)     | Medium     | 设计、数组、哈希表、数学、随机化 |
 | 238  | [除自身以外数组的乘积](https://leetcode.cn/problems/product-of-array-except-self/)                | Medium     | 数组、前缀和                     |
 | 134  | [加油站](https://leetcode.cn/problems/gas-station/)                                               | Medium     | 贪心、数组                       |
+| 135  | [分发糖果](https://leetcode.cn/problems/candy/)                                                   | Hard       | 贪心、数组                       |

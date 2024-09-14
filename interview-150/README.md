@@ -19,5 +19,6 @@
 | 134  | [加油站](https://leetcode.cn/problems/gas-station/)                                               | Medium     | 贪心、数组                         |
 | 135  | [分发糖果](https://leetcode.cn/problems/candy/)                                                   | Hard       | 贪心、数组                         |
 | 42   | [接雨水](https://leetcode.cn/problems/trapping-rain-water/candy/)                                 | Hard       | 栈、数组、双指针、动态规划、单调栈 |
-| 13   | [罗马数字转整数](https://leetcode.cn/problems/roman-to-integer/candy/)                            | Hard       | 哈希表、数学、字符串               |
-| 12   | [整数转罗马数字](https://leetcode.cn/problems/integer-to-roman/)                            | Hard       | 哈希表、数学、字符串               |
+| 13   | [罗马数字转整数](https://leetcode.cn/problems/roman-to-integer/candy/)                            | Easy       | 哈希表、数学、字符串               |
+| 12   | [整数转罗马数字](https://leetcode.cn/problems/integer-to-roman/)                                  | Medium     | 哈希表、数学、字符串               |
+| 58   | [最后一个单词的长度](https://leetcode.cn/problems/length-of-last-word/)                           | Easy       | 字符串                             |

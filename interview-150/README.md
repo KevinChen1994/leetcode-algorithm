@@ -23,3 +23,5 @@
 | 12   | [整数转罗马数字](https://leetcode.cn/problems/integer-to-roman/)                                  | Medium     | 哈希表、数学、字符串               |
 | 58   | [最后一个单词的长度](https://leetcode.cn/problems/length-of-last-word/)                           | Easy       | 字符串                             |
 | 14   | [最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/)                               | Easy       | 字典树、字符串                     | 看了题解，感觉所有题解都是假设公共子串都是从首字母开始的，没太理解 |
+| 151  | [反转字符串中的单词](https://leetcode.cn/problems/reverse-words-in-a-string/)                     | Easy       | 双指针、字符串                     |                                                                    |
+| 6    | [Z 字形变换](https://leetcode.cn/problems/zigzag-conversion/)                                     | Medium     | 字符串                             |                                                                    |

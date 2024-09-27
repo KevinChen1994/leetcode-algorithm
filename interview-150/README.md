@@ -28,3 +28,4 @@
 | 28   | [找出字符串中第一个匹配项的下标](https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/) | Easy       | 双指针、字符串、字符串匹配         |                                                                    |
 | 68   | [文本左右对齐](https://leetcode.cn/problems/text-justification/)                                                   | Hard       | 数组、字符串、模拟                 |                                                                    |
 | 125  | [验证回文串](https://leetcode.cn/problems/valid-palindrome/)                                                       | Easy       | 双指针、字符串                     |                                                                    |
+| 392  | [判断子序列](https://leetcode.cn/problems/is-subsequence/)                                                         | Easy       | 双指针、字符串、动态规划           |                                                                    |

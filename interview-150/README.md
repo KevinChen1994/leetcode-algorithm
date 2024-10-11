@@ -29,3 +29,5 @@
 | 68   | [文本左右对齐](https://leetcode.cn/problems/text-justification/)                                                   | Hard       | 数组、字符串、模拟                 |                                                                    |
 | 125  | [验证回文串](https://leetcode.cn/problems/valid-palindrome/)                                                       | Easy       | 双指针、字符串                     |                                                                    |
 | 392  | [判断子序列](https://leetcode.cn/problems/is-subsequence/)                                                         | Easy       | 双指针、字符串、动态规划           |                                                                    |
+| 167  | [两数之和 II - 输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/)                       | Medium     | 数组、双指针、二分查找             |
+| 11   | [盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/)                                          | Medium     | 贪心、数组、双指针                 |

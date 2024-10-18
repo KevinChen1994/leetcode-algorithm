@@ -34,3 +34,4 @@
 | 15   | [三数之和](https://leetcode.cn/problems/3sum/)                                                                     | Medium     | 数组、双指针、排序                 |
 | 209  | [长度最小的子数组](https://leetcode.cn/problems/minimum-size-subarray-sum/)                                        | Medium     | 数组、二分查找、前缀和、滑动窗口   |
 | 3    | [无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)               | Medium     | 哈希表、字符串、滑动窗口           |
+| 30   | [串联所有单词的子串](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/)                      | Medium     | 哈希表、字符串、滑动窗口           |

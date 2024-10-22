@@ -36,3 +36,4 @@
 | 3    | [无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)               | Medium     | 哈希表、字符串、滑动窗口           |
 | 30   | [串联所有单词的子串](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/)                      | Hard       | 哈希表、字符串、滑动窗口           |
 | 76   | [最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/)                                             | Hard       | 哈希表、字符串、滑动窗口           |
+| 36   | [有效的数独](https://leetcode.cn/problems/valid-sudoku/)                                                           | Medium     | 数组、哈希表、矩阵                 |

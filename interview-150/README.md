@@ -39,4 +39,6 @@
 | 36   | [有效的数独](https://leetcode.cn/problems/valid-sudoku/)                                                           | Medium     | 数组、哈希表、矩阵                 |
 | 54   | [螺旋矩阵](https://leetcode.cn/problems/valid-sudoku/)                                                             | Medium     | 数组、矩阵、模拟                   |
 | 48   | [旋转图像](https://leetcode.cn/problems/rotate-image/)                                                             | Medium     | 数组、数学、矩阵                   |
-| 73   | [矩阵置零](https://leetcode.cn/problems/set-matrix-zeroes/)                                                             | Medium     | 数组、哈希表、矩阵                   |
+| 73   | [矩阵置零](https://leetcode.cn/problems/set-matrix-zeroes/)                                                        | Medium     | 数组、哈希表、矩阵                 |
+| 289  | [生命游戏](https://leetcode.cn/problems/game-of-life/)                                                             | Medium     | 数组、矩阵、模拟                   |
+| 383  | [赎金信](https://leetcode.cn/problems/ransom-note/)                                                                | Easy       | 哈希表、字符串、计数               |

@@ -42,3 +42,4 @@
 | 73   | [矩阵置零](https://leetcode.cn/problems/set-matrix-zeroes/)                                                        | Medium     | 数组、哈希表、矩阵                 |
 | 289  | [生命游戏](https://leetcode.cn/problems/game-of-life/)                                                             | Medium     | 数组、矩阵、模拟                   |
 | 383  | [赎金信](https://leetcode.cn/problems/ransom-note/)                                                                | Easy       | 哈希表、字符串、计数               |
+| 205  | [同构字符串](https://leetcode.cn/problems/isomorphic-strings/)                                                     | Easy       | 哈希表、字符串                     |

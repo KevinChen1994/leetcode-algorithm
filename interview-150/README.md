@@ -44,3 +44,4 @@
 | 383  | [赎金信](https://leetcode.cn/problems/ransom-note/)                                                                | Easy       | 哈希表、字符串、计数               |
 | 205  | [同构字符串](https://leetcode.cn/problems/isomorphic-strings/)                                                     | Easy       | 哈希表、字符串                     |
 | 290  | [单词规律](https://leetcode.cn/problems/word-pattern/)                                                             | Easy       | 哈希表、字符串                     |
+| 242  | [有效的字母异位词](https://leetcode.cn/problems/word-pattern/)                                                     | Easy       | 哈希表、字符串、排序               |

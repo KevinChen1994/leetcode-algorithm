@@ -47,3 +47,4 @@
 | 242  | [有效的字母异位词](https://leetcode.cn/problems/word-pattern/)                                                     | Easy       | 哈希表、字符串、排序               |
 | 49   | [字母异位词分组](https://leetcode.cn/problems/word-pattern/)                                                       | Medium     | 数组、哈希表、字符串、排序         |
 | 1    | [两数之和](https://leetcode.cn/problems/two-sum/)                                                                  | Easy       | 数组、哈希表                       |
+| 202  | [快乐数](https://leetcode.cn/problems/happy-number/)                                                               | Easy       | 哈希表、数学、双指针               |

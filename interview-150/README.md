@@ -48,3 +48,4 @@
 | 49   | [字母异位词分组](https://leetcode.cn/problems/word-pattern/)                                                       | Medium     | 数组、哈希表、字符串、排序         |
 | 1    | [两数之和](https://leetcode.cn/problems/two-sum/)                                                                  | Easy       | 数组、哈希表                       |
 | 202  | [快乐数](https://leetcode.cn/problems/happy-number/)                                                               | Easy       | 哈希表、数学、双指针               |
+| 219  | [存在重复元素 II](https://leetcode.cn/problems/contains-duplicate-ii/)                                             | Easy       | 数组、哈希表、滑动窗口             |
